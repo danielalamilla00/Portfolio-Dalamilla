@@ -12,6 +12,7 @@
 <style>
   @font-face { font-family: 'Coolvetica';     src: url('Coolvetica Font/Coolvetica Rg.otf')      format('opentype'); font-weight: 400; }
   @font-face { font-family: 'CoolveticaCond'; src: url('Coolvetica Font/Coolvetica Rg Cond.otf') format('opentype'); }
+  @font-face { font-family: 'Adieu';          src: url('Adieu_1.ttf'); font-display: swap; }
   :root { --ease-out: cubic-bezier(0.16, 1, 0.3, 1); }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
@@ -97,11 +98,12 @@
   .ex-marquee-row:last-child { margin-bottom: 0; }
   .ex-letter-wrap { display: inline-block; overflow: hidden; line-height: 1.0; }
   .ex-letter {
-    display: inline-block; font-family: 'Coolvetica', sans-serif; font-size: 7rem;
+    display: inline-block; font-family: 'Adieu', sans-serif; font-size: 5.5rem;
     color: rgba(255,255,255,0.9); text-transform: uppercase;
     letter-spacing: -0.02em; line-height: 1.05; white-space: pre;
     transform: translateY(110%);
   }
+  .ex-section-heading .ex-letter { font-size: 6rem; }
   .ex-section-divider {
     position: relative; left: 50%;
     width: calc(100vw - 10rem); height: 2px;
@@ -189,8 +191,8 @@
     pointer-events: none;
   }
   .c-title {
-    font-family: 'Coolvetica', sans-serif;
-    font-size: clamp(2.2rem, 5.5vw, 4.5rem);
+    font-family: 'Adieu', sans-serif;
+    font-size: clamp(1.8rem, 4.5vw, 3.8rem);
     font-weight: 400; color: #fff; line-height: 1.0;
     display: block; margin-bottom: 0.55rem;
   }
@@ -233,7 +235,7 @@
   /* ── Responsive ─────────────────────────────────────────────────────────── */
 
   @media (max-width: 768px) {
-    .ex-letter { font-size: clamp(2.5rem, 12vw, 18vw); }
+    .ex-letter { font-size: clamp(2rem, 10vw, 15vw); }
     .ex-marquee-row { margin-bottom: -0.3rem; }
     .ex-marquee-row + .ex-marquee-row { margin-top: 0.15em; }
     #wk-body { padding: 8rem 2.5rem 0; }
@@ -301,14 +303,14 @@
     opacity: 0; transition: opacity 320ms var(--ease-out) 200ms;
     border-radius: 0; will-change: transform; transform-origin: center center;
   }
-  .ex-headline { font-family: 'CoolveticaCond', sans-serif; font-size: 0.75rem; color: rgba(255,255,255,0.65); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.4rem; display: block; }
-  .ex-title    { font-family: 'Coolvetica', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); color: #fff; line-height: 1.05; margin-bottom: 0.5rem; display: block; }
+  .ex-headline { font-family: 'Adieu', sans-serif; font-size: 0.65rem; color: rgba(255,255,255,0.65); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.4rem; display: block; }
+  .ex-title    { font-family: 'Adieu', sans-serif; font-size: clamp(1.5rem, 3.5vw, 2.5rem); color: #fff; line-height: 1.05; margin-bottom: 0.5rem; display: block; }
   .ex-desc     { font-family: 'Roboto Condensed', sans-serif; font-size: 0.9rem; color: rgba(255,255,255,0.7); max-width: 520px; line-height: 1.45; margin-bottom: 1.5rem; display: block; }
   #card-expand-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
   .ex-btn {
     display: inline-flex; align-items: center; gap: 0.45rem;
     padding: 0.55rem 1.4rem; border-radius: 9999px;
-    font-family: 'Coolvetica', sans-serif; font-size: 1rem;
+    font-family: 'Adieu', sans-serif; font-size: 0.85rem;
     letter-spacing: 0.04em; cursor: pointer; border: none;
     transition: transform 140ms var(--ease-out), background 160ms;
   }
@@ -370,7 +372,7 @@
     opacity: 0; pointer-events: none; transition: opacity 400ms var(--ease-out); z-index: 20;
   }
   #card-expand-scroll-hint span {
-    font-family: 'CoolveticaCond', sans-serif; font-size: 0.65rem;
+    font-family: 'Adieu', sans-serif; font-size: 0.55rem;
     letter-spacing: 0.15em; color: rgba(255,255,255,0.5); text-transform: uppercase;
   }
   #card-expand-scroll-hint svg { width: 18px; height: 18px; animation: hintBounce 1.4s ease-in-out infinite; }
