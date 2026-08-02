@@ -10,6 +10,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 <style>
+  #page-transition-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    pointer-events: none;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    background: rgba(0,0,0,0.25);
+    transition: backdrop-filter 0.45s ease, -webkit-backdrop-filter 0.45s ease, background 0.45s ease;
+  }
+  #page-transition-overlay.out {
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    background: rgba(0,0,0,0);
+  }
   @font-face { font-family: 'Coolvetica';     src: url('Coolvetica Font/Coolvetica Rg.otf')      format('opentype'); font-weight: 300; }
   @font-face { font-family: 'CoolveticaCond'; src: url('Coolvetica Font/Coolvetica Rg Cond.otf') format('opentype'); }
   @font-face { font-family: 'Adieu';          src: url('Adieu_1.ttf'); font-display: swap; }
@@ -123,7 +138,8 @@
     margin-right: auto;
   }
   .wk-grid-block { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
-  .wk-grid-card  { position: relative; border-radius: 18px; overflow: hidden; cursor: pointer; }
+  .wk-grid-card  { position: relative; border-radius: 18px; overflow: hidden; cursor: pointer; opacity: 0; transform: translateY(48px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .wk-grid-card.card-visible { opacity: 1; transform: translateY(0); }
   .wk-grid-card--paired { aspect-ratio: 1 / 1; order: 0; }
   .wk-grid-card--solo   { aspect-ratio: 2 / 1; grid-column: 1 / span 2; order: 1; }
   .wk-grid-card .c-meta  { padding: 1.5rem 2rem 2rem; }
@@ -413,6 +429,13 @@
 </style>
 </head>
 <body>
+<div id="page-transition-overlay"></div>
+<script>
+  (function(){
+    const overlay = document.getElementById('page-transition-overlay');
+    requestAnimationFrame(() => requestAnimationFrame(() => overlay.classList.add('out')));
+  })();
+</script>
 
 <nav id="wk-nav">
   <a href="index.html"><img src="Logo Alamilla.svg" alt="Alamilla"></a>
@@ -1274,6 +1297,19 @@
   reelLightbox.addEventListener('click', e => { if (e.target === reelLightbox) closeReelLightbox(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && reelOpen) closeReelLightbox(); });
 
+  // ─── Card entrance animation ─────────────────────────────────────────────────
+  const cardObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        const card = entry.target;
+        const index = [...document.querySelectorAll('.wk-grid-card')].indexOf(card);
+        setTimeout(() => card.classList.add('card-visible'), index * 80);
+        cardObserver.unobserve(card);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.wk-grid-card').forEach(card => cardObserver.observe(card));
 
 </script>
 </body>
