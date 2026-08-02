@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Bash(dir \"Coolvetica Font\")",
+      "Bash(node -e \"const fs=require\\('fs'\\);const c=fs.readFileSync\\('index.html','utf8'\\);const m=c.match\\(/<script>\\([\\\\s\\\\S]*?\\)<\\\\/script>/\\);new Function\\(m[1]\\);console.log\\('OK', c.length\\);\")",
+      "Bash(grep -n \"^\\\\s*p\\\\b\\\\|p {\\\\|p,\\\\|, p \\\\| p {\" index.html)",
+      "Bash(powershell -Command \"\\(Get-Content index.html -Raw\\) -replace '<span class=\\\\\"c-title\\\\\"></span><span class=\\\\\"c-desc\\\\\">', '<span class=\\\\\"c-title\\\\\"></span><div class=\\\\\"c-divider\\\\\"></div><span class=\\\\\"c-desc\\\\\">' | Set-Content -NoNewline index.html\")",
+      "Bash(node -e \"const c=require\\('fs'\\).readFileSync\\('index.html','utf8'\\); console.log\\('lines', c.split\\('\\\\n'\\).length\\);\")",
+      "Bash(ffprobe -v error -show_entries stream=width,height,display_aspect_ratio,sample_aspect_ratio -show_entries stream_tags=rotate -of default \"Video Carrousel/Sitges Video Carrusel.mp4\")",
+      "Bash(ffmpeg -y -ss 1 -i \"Video Carrousel/Sitges Video Carrusel.mp4\" -frames:v 1 \"/tmp/sitges_frame.png\")",
+      "Read(//tmp/**)",
+      "Bash(python3 -c ' *)",
+      "Bash(ffmpeg -i \"Video Carrousel/Sitges Video Carrusel.mp4\" -vf cropdetect=24:2:0 -frames:v 30 -f null -)",
+      "Bash(Remove-Item -ErrorAction SilentlyContinue sitges_frame.png)",
+      "Bash(rm -f sitges_frame.png)",
+      "Bash(python3 -c \"from PIL import Image; im=Image.open\\('Loader/Loader00.png'\\); print\\(im.size\\)\")"
+    ]
+  }
+}

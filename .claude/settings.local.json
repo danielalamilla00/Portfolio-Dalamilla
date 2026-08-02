@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx skills *)",
+      "Bash(dir \"c:\\\\Users\\\\danie\\\\Desktop\\\\PORTFOLIO 2026\\\\Nuevo Diseño\\\\Nuevo diseño_carpeta\")",
+      "Bash(powershell -NoProfile -Command \"\\(Get-Content 'c:\\\\Users\\\\danie\\\\Desktop\\\\PORTFOLIO 2026\\\\Nuevo Diseño\\\\Nuevo diseño_carpeta\\\\index.html' -Raw\\) -replace '<div class=\\\\\"c-glow-inner\\\\\"></div>', '' | Set-Content -NoNewline -Encoding utf8 'c:\\\\Users\\\\danie\\\\Desktop\\\\PORTFOLIO 2026\\\\Nuevo Diseño\\\\Nuevo diseño_carpeta\\\\index.html'\")",
+      "Bash(node -e ' *)"
+    ]
+  }
+}

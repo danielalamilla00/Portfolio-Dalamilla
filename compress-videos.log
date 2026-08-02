@@ -1,0 +1,1944 @@
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'Video Carrousel\Caprabo Video Carrusel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-03-01T17:45:09.000000Z
+  Duration: 00:00:05.72, start: 0.000000, bitrate: 2577 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-03-01T17:45:11.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080, 2172 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-03-01T17:45:13.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000002281f3aec00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000002281f3aec00] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 000002281f3aec00] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'Video Carrousel\_compressed_Caprabo Video Carrusel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-03-01T17:45:13.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   22 fps=0.0 q=33.0 size=       0KiB time=00:00:00.80 bitrate=   0.5kbits/s speed=1.55x elapsed=0:00:00.51    frame=   76 fps= 74 q=33.0 size=     256KiB time=00:00:02.96 bitrate= 708.6kbits/s speed=2.88x elapsed=0:00:01.02    frame=  139 fps= 90 q=-1.0 size=     512KiB time=00:00:05.48 bitrate= 765.5kbits/s speed=3.55x elapsed=0:00:01.54    [mp4 @ 000002281d846e00] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000002281d2910c0] video:541KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.470984%
+frame=  143 fps= 91 q=-1.0 Lsize=     544KiB time=00:00:05.64 bitrate= 789.4kbits/s speed=3.61x elapsed=0:00:01.56    
+[libx264 @ 000002281f3aec00] frame I:3     Avg QP:23.42  size: 27886
+[libx264 @ 000002281f3aec00] frame P:36    Avg QP:25.93  size:  7075
+[libx264 @ 000002281f3aec00] frame B:104   Avg QP:28.39  size:  2066
+[libx264 @ 000002281f3aec00] consecutive B-frames:  2.1%  1.4%  4.2% 92.3%
+[libx264 @ 000002281f3aec00] mb I  I16..4: 16.0% 67.5% 16.4%
+[libx264 @ 000002281f3aec00] mb P  I16..4:  5.1% 11.2%  0.5%  P16..4: 36.3%  7.5%  1.9%  0.0%  0.0%    skip:37.6%
+[libx264 @ 000002281f3aec00] mb B  I16..4:  0.2%  0.3%  0.0%  B16..8: 31.5%  1.9%  0.1%  direct: 0.2%  skip:65.8%  L0:43.6% L1:55.6% BI: 0.8%
+[libx264 @ 000002281f3aec00] 8x8 transform intra:66.6% inter:89.4%
+[libx264 @ 000002281f3aec00] coded y,uvDC,uvAC intra: 21.7% 35.2% 15.6% inter: 2.6% 3.8% 0.1%
+[libx264 @ 000002281f3aec00] i16 v,h,dc,p: 44% 28% 14% 14%
+[libx264 @ 000002281f3aec00] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 15% 42%  3%  2%  3%  2%  2%  3%
+[libx264 @ 000002281f3aec00] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 25% 15%  6%  4%  5%  7%  4%  5%
+[libx264 @ 000002281f3aec00] i8c dc,h,v,p: 60% 19% 18%  2%
+[libx264 @ 000002281f3aec00] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 000002281f3aec00] ref P L0: 64.2% 14.9% 15.8%  5.2%
+[libx264 @ 000002281f3aec00] ref B L0: 90.6%  7.7%  1.7%
+[libx264 @ 000002281f3aec00] ref B L1: 96.2%  3.8%
+[libx264 @ 000002281f3aec00] kb/s:773.79
+✅ Video Carrousel\Caprabo Video Carrusel.mp4: 1.8MB → 0.5MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'Video Carrousel\Fallas Video Carrusel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-01-04T21:11:42.000000Z
+  Duration: 00:00:06.64, start: 0.000000, bitrate: 9467 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 317 kb/s (default)
+    Metadata:
+      creation_time   : 2026-01-04T21:11:44.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080, 9074 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-01-04T21:11:44.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0000027909e09d00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0000027909e09d00] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0000027909e09d00] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'Video Carrousel\_compressed_Fallas Video Carrusel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-01-04T21:11:44.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   38 fps=0.0 q=33.0 size=       0KiB time=00:00:01.44 bitrate=   0.3kbits/s speed=2.81x elapsed=0:00:00.51    frame=  146 fps=143 q=33.0 size=       0KiB time=00:00:05.76 bitrate=   0.1kbits/s speed=5.62x elapsed=0:00:01.02    [mp4 @ 0000027909e5eb40] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000027909d93ec0] video:255KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.998823%
+frame=  166 fps=156 q=-1.0 Lsize=     258KiB time=00:00:06.56 bitrate= 322.2kbits/s speed=6.17x elapsed=0:00:01.06    
+[libx264 @ 0000027909e09d00] frame I:1     Avg QP:25.03  size: 10730
+[libx264 @ 0000027909e09d00] frame P:82    Avg QP:28.66  size:  2219
+[libx264 @ 0000027909e09d00] frame B:83    Avg QP:31.06  size:   822
+[libx264 @ 0000027909e09d00] consecutive B-frames: 25.9% 20.5%  5.4% 48.2%
+[libx264 @ 0000027909e09d00] mb I  I16..4: 10.6% 82.7%  6.7%
+[libx264 @ 0000027909e09d00] mb P  I16..4:  0.8%  3.4%  0.6%  P16..4:  6.6%  1.6%  0.9%  0.0%  0.0%    skip:86.1%
+[libx264 @ 0000027909e09d00] mb B  I16..4:  0.1%  0.2%  0.0%  B16..8: 10.0%  0.9%  0.1%  direct: 0.2%  skip:88.4%  L0:42.8% L1:56.0% BI: 1.2%
+[libx264 @ 0000027909e09d00] 8x8 transform intra:72.3% inter:72.0%
+[libx264 @ 0000027909e09d00] coded y,uvDC,uvAC intra: 18.4% 25.6% 17.4% inter: 0.7% 1.3% 0.5%
+[libx264 @ 0000027909e09d00] i16 v,h,dc,p: 32% 60%  6%  3%
+[libx264 @ 0000027909e09d00] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 34% 14% 43%  2%  2%  2%  1%  1%  1%
+[libx264 @ 0000027909e09d00] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 21% 30%  3%  2%  7%  2%  2%  4%
+[libx264 @ 0000027909e09d00] i8c dc,h,v,p: 62% 22% 14%  2%
+[libx264 @ 0000027909e09d00] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0000027909e09d00] ref P L0: 72.7%  6.9% 13.3%  7.1%
+[libx264 @ 0000027909e09d00] ref B L0: 87.1% 11.3%  1.5%
+[libx264 @ 0000027909e09d00] ref B L1: 95.5%  4.5%
+[libx264 @ 0000027909e09d00] kb/s:314.36
+✅ Video Carrousel\Fallas Video Carrusel.mp4: 7.5MB → 0.3MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'Video Carrousel\Sensory Video Carrusel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-03-01T18:25:39.000000Z
+  Duration: 00:00:07.36, start: 0.000000, bitrate: 18612 kb/s
+  Stream #0:0[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 18278 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-03-01T18:25:39.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-03-01T18:25:39.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 00000202994cc400] using SAR=1/1
+[libx264 @ 00000202994cc400] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 00000202994cc400] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 00000202994cc400] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'Video Carrousel\_compressed_Sensory Video Carrusel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-03-01T18:25:39.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   19 fps=0.0 q=33.0 size=       0KiB time=00:00:00.68 bitrate=   0.6kbits/s speed=1.31x elapsed=0:00:00.51    frame=   68 fps= 66 q=30.0 size=       0KiB time=00:00:02.64 bitrate=   0.1kbits/s speed=2.57x elapsed=0:00:01.02    frame=  119 fps= 77 q=33.0 size=       0KiB time=00:00:04.68 bitrate=   0.1kbits/s speed=3.04x elapsed=0:00:01.54    frame=  178 fps= 86 q=-1.0 size=     512KiB time=00:00:07.04 bitrate= 595.8kbits/s speed=3.42x elapsed=0:00:02.06    [mp4 @ 000002029b49e9c0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000020299452c00] video:703KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.429632%
+frame=  184 fps= 88 q=-1.0 Lsize=     706KiB time=00:00:07.28 bitrate= 794.5kbits/s speed=3.49x elapsed=0:00:02.08    
+[libx264 @ 00000202994cc400] frame I:2     Avg QP:24.09  size: 13430
+[libx264 @ 00000202994cc400] frame P:47    Avg QP:26.85  size:  9901
+[libx264 @ 00000202994cc400] frame B:135   Avg QP:29.96  size:  1682
+[libx264 @ 00000202994cc400] consecutive B-frames:  1.1%  2.2%  3.3% 93.5%
+[libx264 @ 00000202994cc400] mb I  I16..4: 41.5% 54.4%  4.1%
+[libx264 @ 00000202994cc400] mb P  I16..4:  5.8%  7.1%  0.3%  P16..4: 24.9%  9.3%  4.8%  0.0%  0.0%    skip:47.7%
+[libx264 @ 00000202994cc400] mb B  I16..4:  0.3%  0.3%  0.0%  B16..8: 20.1%  1.2%  0.2%  direct: 0.5%  skip:77.4%  L0:39.6% L1:56.7% BI: 3.7%
+[libx264 @ 00000202994cc400] 8x8 transform intra:53.3% inter:83.3%
+[libx264 @ 00000202994cc400] coded y,uvDC,uvAC intra: 13.9% 33.4% 12.3% inter: 4.2% 9.3% 2.7%
+[libx264 @ 00000202994cc400] i16 v,h,dc,p: 45% 27% 10% 18%
+[libx264 @ 00000202994cc400] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 18% 18% 47%  2%  3%  2%  5%  2%  3%
+[libx264 @ 00000202994cc400] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 16% 26% 25%  4%  6%  3% 11%  2%  6%
+[libx264 @ 00000202994cc400] i8c dc,h,v,p: 66% 19% 13%  2%
+[libx264 @ 00000202994cc400] Weighted P-Frames: Y:2.1% UV:2.1%
+[libx264 @ 00000202994cc400] ref P L0: 67.4% 12.0% 16.2%  4.4%
+[libx264 @ 00000202994cc400] ref B L0: 91.7%  6.9%  1.5%
+[libx264 @ 00000202994cc400] ref B L1: 97.7%  2.3%
+[libx264 @ 00000202994cc400] kb/s:781.77
+✅ Video Carrousel\Sensory Video Carrusel.mp4: 16.3MB → 0.7MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'Video Carrousel\Sitges Video Carrusel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-06T20:15:51.000000Z
+  Duration: 00:00:02.40, start: 0.000000, bitrate: 12485 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-06T20:15:53.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080, 11959 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-06T20:15:53.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000001602be05800] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000001602be05800] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 000001602be05800] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'Video Carrousel\_compressed_Sitges Video Carrusel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-06T20:15:53.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   29 fps=0.0 q=33.0 size=       0KiB time=00:00:01.08 bitrate=   0.4kbits/s speed=2.11x elapsed=0:00:00.51    [mp4 @ 000001602e9e3d00] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001602bd7fac0] video:214KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.737742%
+frame=   60 fps=0.0 q=-1.0 Lsize=     215KiB time=00:00:02.32 bitrate= 759.5kbits/s speed=3.36x elapsed=0:00:00.69    
+[libx264 @ 000001602be05800] frame I:1     Avg QP:26.86  size: 21315
+[libx264 @ 000001602be05800] frame P:15    Avg QP:28.70  size:  6768
+[libx264 @ 000001602be05800] frame B:44    Avg QP:31.68  size:  2162
+[libx264 @ 000001602be05800] consecutive B-frames:  1.7%  0.0%  5.0% 93.3%
+[libx264 @ 000001602be05800] mb I  I16..4: 30.9% 60.8%  8.3%
+[libx264 @ 000001602be05800] mb P  I16..4:  3.5%  5.9%  0.5%  P16..4: 34.0%  4.5%  3.3%  0.0%  0.0%    skip:48.3%
+[libx264 @ 000001602be05800] mb B  I16..4:  0.2%  0.4%  0.0%  B16..8: 28.4%  1.0%  0.1%  direct: 0.6%  skip:69.4%  L0:46.3% L1:53.0% BI: 0.6%
+[libx264 @ 000001602be05800] 8x8 transform intra:60.6% inter:90.7%
+[libx264 @ 000001602be05800] coded y,uvDC,uvAC intra: 33.8% 34.9% 16.9% inter: 4.0% 6.7% 1.1%
+[libx264 @ 000001602be05800] i16 v,h,dc,p: 37% 33% 14% 16%
+[libx264 @ 000001602be05800] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 13% 41%  4%  3%  4%  4%  4%  3%
+[libx264 @ 000001602be05800] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 20% 25%  5%  4%  5%  5%  4%  3%
+[libx264 @ 000001602be05800] i8c dc,h,v,p: 60% 18% 18%  4%
+[libx264 @ 000001602be05800] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 000001602be05800] ref P L0: 52.4% 11.1% 21.8% 14.7%
+[libx264 @ 000001602be05800] ref B L0: 81.1% 15.2%  3.7%
+[libx264 @ 000001602be05800] ref B L1: 93.1%  6.9%
+[libx264 @ 000001602be05800] kb/s:726.50
+✅ Video Carrousel\Sitges Video Carrusel.mp4: 3.6MB → 0.2MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'Video Carrousel\Spotify Video Carrusel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-01-04T21:06:43.000000Z
+  Duration: 00:00:04.40, start: 0.000000, bitrate: 10446 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 317 kb/s (default)
+    Metadata:
+      creation_time   : 2026-01-04T21:06:45.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080, 10015 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-01-04T21:06:46.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0000013ff4609040] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0000013ff4609040] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0000013ff4609040] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'Video Carrousel\_compressed_Spotify Video Carrusel.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-01-04T21:06:46.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   17 fps=0.0 q=33.0 size=       0KiB time=00:00:00.60 bitrate=   0.6kbits/s speed=1.15x elapsed=0:00:00.52    frame=   64 fps= 61 q=33.0 size=       0KiB time=00:00:02.48 bitrate=   0.2kbits/s speed=2.36x elapsed=0:00:01.04    [mp4 @ 0000013ff203ea00] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000013ff1f70c00] video:274KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.769357%
+frame=  110 fps= 84 q=-1.0 Lsize=     276KiB time=00:00:04.32 bitrate= 524.2kbits/s speed=3.29x elapsed=0:00:01.31    
+[libx264 @ 0000013ff4609040] frame I:2     Avg QP:26.61  size: 11244
+[libx264 @ 0000013ff4609040] frame P:31    Avg QP:26.94  size:  5128
+[libx264 @ 0000013ff4609040] frame B:77    Avg QP:28.29  size:  1282
+[libx264 @ 0000013ff4609040] consecutive B-frames:  5.5%  0.0% 10.9% 83.6%
+[libx264 @ 0000013ff4609040] mb I  I16..4: 53.6% 40.8%  5.6%
+[libx264 @ 0000013ff4609040] mb P  I16..4: 24.0%  5.4%  1.1%  P16..4: 29.1%  1.7%  1.7%  0.0%  0.0%    skip:37.0%
+[libx264 @ 0000013ff4609040] mb B  I16..4:  0.5%  0.3%  0.0%  B16..8: 20.3%  0.6%  0.1%  direct: 0.7%  skip:77.6%  L0:35.7% L1:62.0% BI: 2.4%
+[libx264 @ 0000013ff4609040] 8x8 transform intra:22.3% inter:93.0%
+[libx264 @ 0000013ff4609040] coded y,uvDC,uvAC intra: 8.3% 38.4% 5.2% inter: 1.7% 11.4% 0.1%
+[libx264 @ 0000013ff4609040] i16 v,h,dc,p: 44% 16%  9% 30%
+[libx264 @ 0000013ff4609040] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 16% 41%  3%  2%  3%  4%  3%  2%
+[libx264 @ 0000013ff4609040] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 37% 26% 19%  3%  3%  4%  4%  3%  3%
+[libx264 @ 0000013ff4609040] i8c dc,h,v,p: 60% 17% 20%  3%
+[libx264 @ 0000013ff4609040] Weighted P-Frames: Y:16.1% UV:16.1%
+[libx264 @ 0000013ff4609040] ref P L0: 77.9%  9.5%  9.8%  2.4%  0.4%
+[libx264 @ 0000013ff4609040] ref B L0: 91.6%  7.4%  0.9%
+[libx264 @ 0000013ff4609040] ref B L1: 97.3%  2.7%
+[libx264 @ 0000013ff4609040] kb/s:509.44
+✅ Video Carrousel\Spotify Video Carrusel.mp4: 5.5MB → 0.3MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Caprabo\Ventilador\Ventilador_Globos.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T20:31:17.000000Z
+  Duration: 00:00:08.00, start: 0.000000, bitrate: 2395 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:31:18.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, 2016 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:31:19.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0000024fb4cea880] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0000024fb4cea880] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 0000024fb4cea880] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Caprabo\Ventilador\_compressed_Ventilador_Globos.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T20:31:19.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   29 fps=0.0 q=33.0 size=       0KiB time=00:00:01.04 bitrate=   0.4kbits/s speed=2.05x elapsed=0:00:00.50    frame=   93 fps= 91 q=33.0 size=     256KiB time=00:00:03.64 bitrate= 576.2kbits/s speed=3.57x elapsed=0:00:01.02    frame=  174 fps=113 q=33.0 size=     512KiB time=00:00:06.88 bitrate= 609.7kbits/s speed=4.47x elapsed=0:00:01.53    [mp4 @ 0000024fb53f6d00] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000024fb2c40b00] video:646KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.481579%
+frame=  200 fps=122 q=-1.0 Lsize=     649KiB time=00:00:07.92 bitrate= 671.1kbits/s speed=4.85x elapsed=0:00:01.63    
+[libx264 @ 0000024fb4cea880] frame I:2     Avg QP:23.91  size:  5164
+[libx264 @ 0000024fb4cea880] frame P:64    Avg QP:24.58  size:  6692
+[libx264 @ 0000024fb4cea880] frame B:134   Avg QP:26.42  size:  1655
+[libx264 @ 0000024fb4cea880] consecutive B-frames:  9.0%  5.0%  0.0% 86.0%
+[libx264 @ 0000024fb4cea880] mb I  I16..4: 19.8% 77.7%  2.5%
+[libx264 @ 0000024fb4cea880] mb P  I16..4:  4.0% 12.7%  0.4%  P16..4: 15.0%  5.1%  1.9%  0.0%  0.0%    skip:60.9%
+[libx264 @ 0000024fb4cea880] mb B  I16..4:  0.6%  1.0%  0.0%  B16..8: 18.1%  0.8%  0.1%  direct: 0.1%  skip:79.2%  L0:42.7% L1:54.9% BI: 2.4%
+[libx264 @ 0000024fb4cea880] 8x8 transform intra:73.3% inter:71.8%
+[libx264 @ 0000024fb4cea880] coded y,uvDC,uvAC intra: 8.4% 6.7% 3.1% inter: 2.5% 2.5% 0.4%
+[libx264 @ 0000024fb4cea880] i16 v,h,dc,p: 39% 25% 10% 26%
+[libx264 @ 0000024fb4cea880] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35% 14% 44%  1%  1%  1%  1%  1%  1%
+[libx264 @ 0000024fb4cea880] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 15% 21%  9% 10%  7%  6%  5%  4%
+[libx264 @ 0000024fb4cea880] i8c dc,h,v,p: 93%  3%  3%  1%
+[libx264 @ 0000024fb4cea880] Weighted P-Frames: Y:1.6% UV:0.0%
+[libx264 @ 0000024fb4cea880] ref P L0: 55.6% 12.2% 25.1%  7.0%  0.0%
+[libx264 @ 0000024fb4cea880] ref B L0: 85.1% 12.0%  3.0%
+[libx264 @ 0000024fb4cea880] ref B L1: 94.4%  5.6%
+[libx264 @ 0000024fb4cea880] kb/s:660.47
+✅ proyectos\Caprabo\Ventilador\Ventilador_Globos.mp4: 2.3MB → 0.6MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Caprabo\Ventilador\Ventilador_Halloween.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T20:36:31.000000Z
+  Duration: 00:00:08.00, start: 0.000000, bitrate: 1397 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:36:44.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, 1018 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:36:54.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000001d16f7efe40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000001d16f7efe40] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000001d16f7efe40] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Caprabo\Ventilador\_compressed_Ventilador_Halloween.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T20:36:54.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   27 fps=0.0 q=33.0 size=       0KiB time=00:00:01.00 bitrate=   0.4kbits/s speed=1.96x elapsed=0:00:00.51    frame=   70 fps= 68 q=33.0 size=     256KiB time=00:00:02.72 bitrate= 771.2kbits/s speed=2.65x elapsed=0:00:01.02    frame=  117 fps= 76 q=33.0 size=     512KiB time=00:00:04.60 bitrate= 911.9kbits/s speed=2.98x elapsed=0:00:01.54    frame=  161 fps= 78 q=33.0 size=     768KiB time=00:00:06.36 bitrate= 989.3kbits/s speed=3.09x elapsed=0:00:02.05    [mp4 @ 000001d16f83ebc0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001d16f771b40] video:1165KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.254439%
+frame=  200 fps= 86 q=-1.0 Lsize=    1168KiB time=00:00:07.92 bitrate=1208.3kbits/s speed=3.42x elapsed=0:00:02.31    
+[libx264 @ 000001d16f7efe40] frame I:4     Avg QP:22.88  size: 11945
+[libx264 @ 000001d16f7efe40] frame P:83    Avg QP:25.63  size:  8343
+[libx264 @ 000001d16f7efe40] frame B:113   Avg QP:29.69  size:  4003
+[libx264 @ 000001d16f7efe40] consecutive B-frames: 19.5% 13.0%  7.5% 60.0%
+[libx264 @ 000001d16f7efe40] mb I  I16..4: 22.5% 69.2%  8.3%
+[libx264 @ 000001d16f7efe40] mb P  I16..4:  6.8% 16.5%  2.6%  P16..4: 12.2%  2.8%  0.7%  0.0%  0.0%    skip:58.5%
+[libx264 @ 000001d16f7efe40] mb B  I16..4:  1.0%  1.4%  0.3%  B16..8: 20.0%  2.2%  0.2%  direct: 0.9%  skip:73.9%  L0:46.7% L1:49.1% BI: 4.2%
+[libx264 @ 000001d16f7efe40] 8x8 transform intra:63.0% inter:62.9%
+[libx264 @ 000001d16f7efe40] coded y,uvDC,uvAC intra: 18.9% 27.7% 9.6% inter: 3.6% 6.1% 0.2%
+[libx264 @ 000001d16f7efe40] i16 v,h,dc,p: 39% 21% 12% 27%
+[libx264 @ 000001d16f7efe40] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 44% 15% 30%  2%  2%  2%  1%  2%  2%
+[libx264 @ 000001d16f7efe40] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31% 15% 24%  7%  6%  6%  4%  5%  3%
+[libx264 @ 000001d16f7efe40] i8c dc,h,v,p: 70%  9% 15%  5%
+[libx264 @ 000001d16f7efe40] Weighted P-Frames: Y:4.8% UV:2.4%
+[libx264 @ 000001d16f7efe40] ref P L0: 56.4%  9.7% 25.1%  8.3%  0.5%
+[libx264 @ 000001d16f7efe40] ref B L0: 86.1% 11.9%  2.0%
+[libx264 @ 000001d16f7efe40] ref B L1: 95.8%  4.2%
+[libx264 @ 000001d16f7efe40] kb/s:1192.53
+✅ proyectos\Caprabo\Ventilador\Ventilador_Halloween.mp4: 1.3MB → 1.1MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Caprabo\Ventilador\Ventilador_Madalena.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T20:37:57.000000Z
+  Duration: 00:00:08.00, start: 0.000000, bitrate: 2375 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:38:09.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, 1996 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:38:19.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000002822da00780] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000002822da00780] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000002822da00780] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Caprabo\Ventilador\_compressed_Ventilador_Madalena.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T20:38:19.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   21 fps=0.0 q=33.0 size=       0KiB time=00:00:00.76 bitrate=   0.5kbits/s speed=1.49x elapsed=0:00:00.50    frame=   80 fps= 77 q=30.0 size=       0KiB time=00:00:03.12 bitrate=   0.1kbits/s speed=3.01x elapsed=0:00:01.03    frame=  139 fps= 90 q=33.0 size=     512KiB time=00:00:05.48 bitrate= 765.5kbits/s speed=3.56x elapsed=0:00:01.53    [mp4 @ 000002822d9f8480] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000002822d970f40] video:751KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.410128%
+frame=  200 fps=105 q=-1.0 Lsize=     755KiB time=00:00:07.92 bitrate= 780.5kbits/s speed=4.17x elapsed=0:00:01.90    
+[libx264 @ 000002822da00780] frame I:3     Avg QP:22.46  size:  8394
+[libx264 @ 000002822da00780] frame P:68    Avg QP:25.57  size:  5292
+[libx264 @ 000002822da00780] frame B:129   Avg QP:28.15  size:  2975
+[libx264 @ 000002822da00780] consecutive B-frames: 10.0% 10.0%  6.0% 74.0%
+[libx264 @ 000002822da00780] mb I  I16..4: 23.5% 71.2%  5.3%
+[libx264 @ 000002822da00780] mb P  I16..4:  4.9% 18.7%  1.3%  P16..4: 12.9%  2.6%  0.7%  0.0%  0.0%    skip:59.0%
+[libx264 @ 000002822da00780] mb B  I16..4:  0.9%  2.2%  0.2%  B16..8: 21.3%  2.4%  0.2%  direct: 0.2%  skip:72.5%  L0:47.9% L1:50.7% BI: 1.4%
+[libx264 @ 000002822da00780] 8x8 transform intra:72.9% inter:81.7%
+[libx264 @ 000002822da00780] coded y,uvDC,uvAC intra: 11.2% 8.7% 1.2% inter: 2.4% 1.3% 0.1%
+[libx264 @ 000002822da00780] i16 v,h,dc,p: 42% 25% 10% 23%
+[libx264 @ 000002822da00780] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 34% 14% 43%  2%  2%  2%  1%  1%  1%
+[libx264 @ 000002822da00780] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 19% 27%  6%  7%  6%  5%  4%  3%
+[libx264 @ 000002822da00780] i8c dc,h,v,p: 87%  6%  6%  1%
+[libx264 @ 000002822da00780] Weighted P-Frames: Y:5.9% UV:0.0%
+[libx264 @ 000002822da00780] ref P L0: 49.3%  9.8% 26.7% 14.0%  0.2%
+[libx264 @ 000002822da00780] ref B L0: 82.2% 14.0%  3.7%
+[libx264 @ 000002822da00780] ref B L1: 94.2%  5.8%
+[libx264 @ 000002822da00780] kb/s:768.83
+✅ proyectos\Caprabo\Ventilador\Ventilador_Madalena.mp4: 2.3MB → 0.7MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Caprabo\Ventilador\Ventilador_Monedas.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T20:39:17.000000Z
+  Duration: 00:00:08.00, start: 0.000000, bitrate: 2393 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:39:18.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, 2014 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:39:19.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000002ddee444040] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000002ddee444040] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000002ddee444040] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Caprabo\Ventilador\_compressed_Ventilador_Monedas.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T20:39:19.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   26 fps=0.0 q=33.0 size=       0KiB time=00:00:00.96 bitrate=   0.4kbits/s speed=1.88x elapsed=0:00:00.51    frame=   82 fps= 80 q=33.0 size=       0KiB time=00:00:03.20 bitrate=   0.1kbits/s speed=3.11x elapsed=0:00:01.02    frame=  144 fps= 93 q=33.0 size=     256KiB time=00:00:05.64 bitrate= 371.9kbits/s speed=3.65x elapsed=0:00:01.54    [mp4 @ 000002ddebfff300] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000002ddebf80f40] video:715KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.412328%
+frame=  200 fps=106 q=-1.0 Lsize=     718KiB time=00:00:07.92 bitrate= 742.9kbits/s speed=4.21x elapsed=0:00:01.88    
+[libx264 @ 000002ddee444040] frame I:3     Avg QP:22.45  size:  4299
+[libx264 @ 000002ddee444040] frame P:83    Avg QP:25.71  size:  5014
+[libx264 @ 000002ddee444040] frame B:114   Avg QP:28.09  size:  2655
+[libx264 @ 000002ddee444040] consecutive B-frames: 17.0% 15.0% 18.0% 50.0%
+[libx264 @ 000002ddee444040] mb I  I16..4: 21.6% 76.7%  1.7%
+[libx264 @ 000002ddee444040] mb P  I16..4:  5.2% 18.5%  1.1%  P16..4: 11.5%  2.2%  0.5%  0.0%  0.0%    skip:61.1%
+[libx264 @ 000002ddee444040] mb B  I16..4:  1.4%  2.4%  0.1%  B16..8: 19.7%  1.9%  0.1%  direct: 0.3%  skip:74.1%  L0:47.0% L1:50.3% BI: 2.7%
+[libx264 @ 000002ddee444040] 8x8 transform intra:72.8% inter:87.0%
+[libx264 @ 000002ddee444040] coded y,uvDC,uvAC intra: 10.6% 14.5% 3.7% inter: 2.3% 2.9% 0.0%
+[libx264 @ 000002ddee444040] i16 v,h,dc,p: 39% 26% 11% 23%
+[libx264 @ 000002ddee444040] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 33% 15% 44%  1%  1%  1%  1%  1%  1%
+[libx264 @ 000002ddee444040] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 18% 26%  5%  6%  5%  4%  4%  2%
+[libx264 @ 000002ddee444040] i8c dc,h,v,p: 85%  7%  7%  1%
+[libx264 @ 000002ddee444040] Weighted P-Frames: Y:4.8% UV:1.2%
+[libx264 @ 000002ddee444040] ref P L0: 52.9% 10.6% 24.8% 11.5%  0.1%
+[libx264 @ 000002ddee444040] ref B L0: 79.8% 16.6%  3.6%
+[libx264 @ 000002ddee444040] ref B L1: 94.0%  6.0%
+[libx264 @ 000002ddee444040] kb/s:731.74
+✅ proyectos\Caprabo\Ventilador\Ventilador_Monedas.mp4: 2.3MB → 0.7MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Caprabo\Ventilador\Ventilador_Navidad.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T20:40:03.000000Z
+  Duration: 00:00:08.00, start: 0.000000, bitrate: 2407 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:40:17.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, 2028 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:40:33.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0000019c987bacc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0000019c987bacc0] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 0000019c987bacc0] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Caprabo\Ventilador\_compressed_Ventilador_Navidad.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T20:40:33.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   22 fps=0.0 q=31.0 size=       0KiB time=00:00:00.80 bitrate=   0.5kbits/s speed=1.58x elapsed=0:00:00.50    frame=   82 fps= 80 q=33.0 size=       0KiB time=00:00:03.20 bitrate=   0.1kbits/s speed=3.13x elapsed=0:00:01.02    frame=  135 fps= 88 q=33.0 size=     512KiB time=00:00:05.32 bitrate= 788.5kbits/s speed=3.46x elapsed=0:00:01.53    [mp4 @ 0000019c9a6da880] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000019c9870f740] video:985KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.303461%
+frame=  200 fps=100 q=-1.0 Lsize=     988KiB time=00:00:07.92 bitrate=1021.6kbits/s speed=3.95x elapsed=0:00:02.00    
+[libx264 @ 0000019c987bacc0] frame I:3     Avg QP:23.08  size:  4446
+[libx264 @ 0000019c987bacc0] frame P:85    Avg QP:24.45  size:  6269
+[libx264 @ 0000019c987bacc0] frame B:112   Avg QP:27.08  size:  4120
+[libx264 @ 0000019c987bacc0] consecutive B-frames: 20.0% 13.0%  9.0% 58.0%
+[libx264 @ 0000019c987bacc0] mb I  I16..4: 19.7% 78.6%  1.6%
+[libx264 @ 0000019c987bacc0] mb P  I16..4:  6.3% 20.6%  1.6%  P16..4: 10.0%  1.8%  0.6%  0.0%  0.0%    skip:59.2%
+[libx264 @ 0000019c987bacc0] mb B  I16..4:  1.3%  2.5%  0.3%  B16..8: 16.3%  2.5%  0.5%  direct: 1.0%  skip:75.5%  L0:48.5% L1:43.2% BI: 8.3%
+[libx264 @ 0000019c987bacc0] 8x8 transform intra:71.3% inter:67.9%
+[libx264 @ 0000019c987bacc0] coded y,uvDC,uvAC intra: 13.5% 10.6% 3.2% inter: 3.3% 2.3% 0.2%
+[libx264 @ 0000019c987bacc0] i16 v,h,dc,p: 42% 26% 10% 22%
+[libx264 @ 0000019c987bacc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 36% 13% 43%  1%  1%  1%  1%  1%  1%
+[libx264 @ 0000019c987bacc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 17% 20%  7%  7%  7%  6%  6%  5%
+[libx264 @ 0000019c987bacc0] i8c dc,h,v,p: 90%  5%  4%  1%
+[libx264 @ 0000019c987bacc0] Weighted P-Frames: Y:15.3% UV:4.7%
+[libx264 @ 0000019c987bacc0] ref P L0: 48.0% 11.1% 25.8% 13.9%  1.1%
+[libx264 @ 0000019c987bacc0] ref B L0: 81.9% 14.7%  3.3%
+[libx264 @ 0000019c987bacc0] ref B L1: 94.9%  5.1%
+[libx264 @ 0000019c987bacc0] kb/s:1007.68
+✅ proyectos\Caprabo\Ventilador\Ventilador_Navidad.mp4: 2.3MB → 1.0MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Caprabo\Ventilador\Ventilador_Sant Joan.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T20:41:41.000000Z
+  Duration: 00:00:08.00, start: 0.000000, bitrate: 2390 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:41:48.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, 2011 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:41:55.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000001d0001fe900] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000001d0001fe900] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000001d0001fe900] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Caprabo\Ventilador\_compressed_Ventilador_Sant Joan.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T20:41:55.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   23 fps=0.0 q=33.0 size=       0KiB time=00:00:00.84 bitrate=   0.5kbits/s speed=1.62x elapsed=0:00:00.51    frame=   71 fps= 68 q=33.0 size=     256KiB time=00:00:02.76 bitrate= 760.0kbits/s speed=2.65x elapsed=0:00:01.04    frame=  113 fps= 72 q=33.0 size=     512KiB time=00:00:04.44 bitrate= 944.7kbits/s speed=2.84x elapsed=0:00:01.56    frame=  146 fps= 70 q=33.0 size=     768KiB time=00:00:05.76 bitrate=1092.3kbits/s speed=2.77x elapsed=0:00:02.08    frame=  195 fps= 75 q=-1.0 size=    1024KiB time=00:00:07.72 bitrate=1086.7kbits/s speed=2.98x elapsed=0:00:02.59    [mp4 @ 000001d0001fc040] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001d07e0edbc0] video:1089KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.285042%
+frame=  200 fps= 77 q=-1.0 Lsize=    1093KiB time=00:00:07.92 bitrate=1130.1kbits/s speed=3.04x elapsed=0:00:02.60    
+[libx264 @ 000001d0001fe900] frame I:2     Avg QP:24.19  size:  9289
+[libx264 @ 000001d0001fe900] frame P:69    Avg QP:25.06  size:  8996
+[libx264 @ 000001d0001fe900] frame B:129   Avg QP:28.19  size:  3687
+[libx264 @ 000001d0001fe900] consecutive B-frames: 10.5%  9.0%  4.5% 76.0%
+[libx264 @ 000001d0001fe900] mb I  I16..4: 18.4% 77.2%  4.4%
+[libx264 @ 000001d0001fe900] mb P  I16..4:  5.5% 15.3%  1.4%  P16..4: 12.6%  4.4%  1.4%  0.0%  0.0%    skip:59.6%
+[libx264 @ 000001d0001fe900] mb B  I16..4:  0.8%  1.1%  0.2%  B16..8: 18.0%  2.2%  0.2%  direct: 1.3%  skip:76.2%  L0:41.8% L1:49.0% BI: 9.1%
+[libx264 @ 000001d0001fe900] 8x8 transform intra:67.8% inter:60.6%
+[libx264 @ 000001d0001fe900] coded y,uvDC,uvAC intra: 15.3% 15.4% 7.3% inter: 4.8% 5.8% 0.4%
+[libx264 @ 000001d0001fe900] i16 v,h,dc,p: 43% 24%  9% 23%
+[libx264 @ 000001d0001fe900] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 39% 14% 37%  2%  2%  2%  1%  1%  2%
+[libx264 @ 000001d0001fe900] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 18% 21%  7%  7%  6%  6%  5%  5%
+[libx264 @ 000001d0001fe900] i8c dc,h,v,p: 82%  7%  8%  3%
+[libx264 @ 000001d0001fe900] Weighted P-Frames: Y:4.3% UV:1.4%
+[libx264 @ 000001d0001fe900] ref P L0: 55.9% 10.3% 27.8%  5.8%  0.2%
+[libx264 @ 000001d0001fe900] ref B L0: 88.3% 10.2%  1.5%
+[libx264 @ 000001d0001fe900] ref B L1: 93.7%  6.3%
+[libx264 @ 000001d0001fe900] kb/s:1114.94
+✅ proyectos\Caprabo\Ventilador\Ventilador_Sant Joan.mp4: 2.3MB → 1.1MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Fallas\Styleframes\Styleframes_2_1.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T20:49:55.000000Z
+  Duration: 00:00:02.84, start: 0.000000, bitrate: 1535 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 317 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:49:57.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, 1040 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:49:58.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000001663c41a880] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000001663c41a880] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000001663c41a880] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Fallas\Styleframes\_compressed_Styleframes_2_1.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T20:49:58.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   25 fps=0.0 q=33.0 size=       0KiB time=00:00:00.92 bitrate=   0.4kbits/s speed=1.73x elapsed=0:00:00.53    [mp4 @ 000001663a4e8e40] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001663a46e100] video:98KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.706715%
+frame=   71 fps=0.0 q=-1.0 Lsize=     100KiB time=00:00:02.76 bitrate= 296.4kbits/s speed=3.52x elapsed=0:00:00.78    
+[libx264 @ 000001663c41a880] frame I:1     Avg QP:25.50  size:  8573
+[libx264 @ 000001663c41a880] frame P:26    Avg QP:24.12  size:  2689
+[libx264 @ 000001663c41a880] frame B:44    Avg QP:28.24  size:   486
+[libx264 @ 000001663c41a880] consecutive B-frames: 11.3% 16.9%  4.2% 67.6%
+[libx264 @ 000001663c41a880] mb I  I16..4: 30.1% 66.0%  3.9%
+[libx264 @ 000001663c41a880] mb P  I16..4:  3.9%  7.3%  0.2%  P16..4:  9.3%  0.8%  0.5%  0.0%  0.0%    skip:78.0%
+[libx264 @ 000001663c41a880] mb B  I16..4:  0.2%  0.2%  0.0%  B16..8:  6.8%  0.2%  0.0%  direct: 0.1%  skip:92.5%  L0:36.4% L1:63.4% BI: 0.2%
+[libx264 @ 000001663c41a880] 8x8 transform intra:63.6% inter:92.2%
+[libx264 @ 000001663c41a880] coded y,uvDC,uvAC intra: 11.9% 18.0% 5.1% inter: 0.5% 1.6% 0.1%
+[libx264 @ 000001663c41a880] i16 v,h,dc,p: 36% 45% 14%  5%
+[libx264 @ 000001663c41a880] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 32% 12% 52%  1%  1%  1%  1%  0%  0%
+[libx264 @ 000001663c41a880] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 43% 23% 19%  3%  1%  4%  1%  2%  4%
+[libx264 @ 000001663c41a880] i8c dc,h,v,p: 64% 22% 13%  2%
+[libx264 @ 000001663c41a880] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 000001663c41a880] ref P L0: 72.2%  6.6% 16.3%  4.9%
+[libx264 @ 000001663c41a880] ref B L0: 81.8% 17.4%  0.8%
+[libx264 @ 000001663c41a880] ref B L1: 95.2%  4.8%
+[libx264 @ 000001663c41a880] kb/s:281.28
+✅ proyectos\Fallas\Styleframes\Styleframes_2_1.mp4: 0.5MB → 0.1MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Fallas\Styleframes\Styleframes_3.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T20:53:33.000000Z
+  Duration: 00:00:04.52, start: 0.000000, bitrate: 1438 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:53:35.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, 1011 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:53:36.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000001f58d7fc2c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000001f58d7fc2c0] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000001f58d7fc2c0] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Fallas\Styleframes\_compressed_Styleframes_3.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T20:53:36.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   27 fps=0.0 q=33.0 size=       0KiB time=00:00:01.00 bitrate=   0.4kbits/s speed=1.93x elapsed=0:00:00.51    frame=   88 fps= 85 q=33.0 size=     256KiB time=00:00:03.44 bitrate= 609.7kbits/s speed=3.33x elapsed=0:00:01.03    [mp4 @ 000001f58b39db40] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001f58b3223c0] video:402KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.523169%
+frame=  113 fps= 93 q=-1.0 Lsize=     405KiB time=00:00:04.44 bitrate= 746.4kbits/s speed=3.65x elapsed=0:00:01.21    
+[libx264 @ 000001f58d7fc2c0] frame I:1     Avg QP:22.48  size: 25388
+[libx264 @ 000001f58d7fc2c0] frame P:44    Avg QP:24.94  size:  6375
+[libx264 @ 000001f58d7fc2c0] frame B:68    Avg QP:29.64  size:  1552
+[libx264 @ 000001f58d7fc2c0] consecutive B-frames: 15.0% 10.6% 10.6% 63.7%
+[libx264 @ 000001f58d7fc2c0] mb I  I16..4: 41.5% 49.5%  8.9%
+[libx264 @ 000001f58d7fc2c0] mb P  I16..4:  4.9% 12.2%  1.7%  P16..4: 12.8%  2.2%  1.0%  0.0%  0.0%    skip:65.2%
+[libx264 @ 000001f58d7fc2c0] mb B  I16..4:  0.2%  0.3%  0.0%  B16..8: 13.9%  1.2%  0.2%  direct: 0.6%  skip:83.6%  L0:40.5% L1:53.6% BI: 5.8%
+[libx264 @ 000001f58d7fc2c0] 8x8 transform intra:62.9% inter:73.8%
+[libx264 @ 000001f58d7fc2c0] coded y,uvDC,uvAC intra: 23.5% 21.0% 9.3% inter: 1.7% 3.2% 0.3%
+[libx264 @ 000001f58d7fc2c0] i16 v,h,dc,p: 26% 36% 24% 13%
+[libx264 @ 000001f58d7fc2c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 25% 39%  2%  2%  2%  2%  1%  2%
+[libx264 @ 000001f58d7fc2c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 21% 30%  4%  5%  4%  6%  3%  4%
+[libx264 @ 000001f58d7fc2c0] i8c dc,h,v,p: 68% 20% 10%  2%
+[libx264 @ 000001f58d7fc2c0] Weighted P-Frames: Y:9.1% UV:0.0%
+[libx264 @ 000001f58d7fc2c0] ref P L0: 68.0% 12.8% 13.0%  5.7%  0.5%
+[libx264 @ 000001f58d7fc2c0] ref B L0: 88.7%  9.2%  2.0%
+[libx264 @ 000001f58d7fc2c0] ref B L1: 95.5%  4.5%
+[libx264 @ 000001f58d7fc2c0] kb/s:728.17
+✅ proyectos\Fallas\Styleframes\Styleframes_3.mp4: 0.8MB → 0.4MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Fallas\Styleframes\Styleframes_5_1.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T20:50:50.000000Z
+  Duration: 00:00:01.28, start: 0.000000, bitrate: 1800 kb/s
+  Stream #0:0[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, 1094 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:50:51.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T20:50:52.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000001ef41d89800] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000001ef41d89800] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000001ef41d89800] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Fallas\Styleframes\_compressed_Styleframes_5_1.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T20:50:51.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[mp4 @ 000001ef3fbe0c40] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001ef3fb62540] video:66KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.888379%
+frame=   32 fps=0.0 q=-1.0 Lsize=      67KiB time=00:00:01.20 bitrate= 460.4kbits/s speed=4.13x elapsed=0:00:00.29    
+[libx264 @ 000001ef41d89800] frame I:1     Avg QP:21.54  size: 32800
+[libx264 @ 000001ef41d89800] frame P:8     Avg QP:23.39  size:  2824
+[libx264 @ 000001ef41d89800] frame B:23    Avg QP:30.64  size:   509
+[libx264 @ 000001ef41d89800] consecutive B-frames:  3.1%  0.0%  9.4% 87.5%
+[libx264 @ 000001ef41d89800] mb I  I16..4: 16.3% 69.6% 14.1%
+[libx264 @ 000001ef41d89800] mb P  I16..4:  5.8%  6.0%  0.0%  P16..4:  8.6%  1.0%  0.7%  0.0%  0.0%    skip:77.9%
+[libx264 @ 000001ef41d89800] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  6.5%  0.0%  0.0%  direct: 0.2%  skip:93.2%  L0:41.6% L1:57.9% BI: 0.6%
+[libx264 @ 000001ef41d89800] 8x8 transform intra:60.3% inter:96.2%
+[libx264 @ 000001ef41d89800] coded y,uvDC,uvAC intra: 32.1% 22.0% 7.9% inter: 0.4% 1.9% 0.6%
+[libx264 @ 000001ef41d89800] i16 v,h,dc,p: 39% 24% 29%  8%
+[libx264 @ 000001ef41d89800] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31% 13% 44%  3%  2%  2%  2%  2%  1%
+[libx264 @ 000001ef41d89800] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 44% 19% 16%  4%  2%  2%  4%  3%  5%
+[libx264 @ 000001ef41d89800] i8c dc,h,v,p: 65% 14% 18%  3%
+[libx264 @ 000001ef41d89800] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 000001ef41d89800] ref P L0: 74.0% 11.6% 10.7%  3.7%
+[libx264 @ 000001ef41d89800] ref B L0: 88.0% 11.3%  0.7%
+[libx264 @ 000001ef41d89800] ref B L1: 95.6%  4.4%
+[libx264 @ 000001ef41d89800] kb/s:419.33
+✅ proyectos\Fallas\Styleframes\Styleframes_5_1.mp4: 0.3MB → 0.1MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Sitges\Rigging\Rigging Sitges_1.1.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T10:35:53.000000Z
+  Duration: 00:00:02.40, start: 0.000000, bitrate: 4715 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 315 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T10:35:55.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, 3003 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T10:35:55.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0000022a2e4828c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0000022a2e4828c0] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 0000022a2e4828c0] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Sitges\Rigging\_compressed_Rigging Sitges_1.1.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T10:35:55.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   48 fps=0.0 q=33.0 size=       0KiB time=00:00:01.84 bitrate=   0.2kbits/s speed=3.61x elapsed=0:00:00.50    [mp4 @ 0000022a2c26c480] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000022a2c1f1540] video:140KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.125803%
+frame=   60 fps=0.0 q=-1.0 Lsize=     142KiB time=00:00:02.32 bitrate= 500.5kbits/s speed=4.19x elapsed=0:00:00.55    
+[libx264 @ 0000022a2e4828c0] frame I:1     Avg QP:22.85  size: 21695
+[libx264 @ 0000022a2e4828c0] frame P:15    Avg QP:26.45  size:  4688
+[libx264 @ 0000022a2e4828c0] frame B:44    Avg QP:29.00  size:  1156
+[libx264 @ 0000022a2e4828c0] consecutive B-frames:  1.7%  0.0%  5.0% 93.3%
+[libx264 @ 0000022a2e4828c0] mb I  I16..4: 23.9% 66.7%  9.4%
+[libx264 @ 0000022a2e4828c0] mb P  I16..4:  0.7%  1.8%  0.2%  P16..4: 23.5%  4.6%  1.9%  0.0%  0.0%    skip:67.3%
+[libx264 @ 0000022a2e4828c0] mb B  I16..4:  0.0%  0.1%  0.0%  B16..8: 18.1%  0.6%  0.0%  direct: 0.1%  skip:81.0%  L0:49.4% L1:49.9% BI: 0.7%
+[libx264 @ 0000022a2e4828c0] 8x8 transform intra:67.1% inter:86.0%
+[libx264 @ 0000022a2e4828c0] coded y,uvDC,uvAC intra: 27.6% 29.1% 11.4% inter: 1.6% 2.0% 0.0%
+[libx264 @ 0000022a2e4828c0] i16 v,h,dc,p: 62% 19% 10%  8%
+[libx264 @ 0000022a2e4828c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35% 15% 31%  3%  3%  3%  3%  3%  4%
+[libx264 @ 0000022a2e4828c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35% 20% 14%  5%  7%  6%  6%  4%  3%
+[libx264 @ 0000022a2e4828c0] i8c dc,h,v,p: 67% 16% 13%  4%
+[libx264 @ 0000022a2e4828c0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0000022a2e4828c0] ref P L0: 61.8%  7.5% 18.5% 12.2%
+[libx264 @ 0000022a2e4828c0] ref B L0: 83.1% 13.0%  3.9%
+[libx264 @ 0000022a2e4828c0] ref B L1: 93.3%  6.7%
+[libx264 @ 0000022a2e4828c0] kb/s:476.17
+✅ proyectos\Sitges\Rigging\Rigging Sitges_1.1.mp4: 1.3MB → 0.1MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Sitges\Rigging\Rigging Sitges_2.1.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T10:36:27.000000Z
+  Duration: 00:00:02.40, start: 0.000000, bitrate: 4588 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 315 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T10:36:29.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, 2875 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T10:36:29.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000002979627f6c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000002979627f6c0] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000002979627f6c0] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Sitges\Rigging\_compressed_Rigging Sitges_2.1.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T10:36:29.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   31 fps=0.0 q=33.0 size=     256KiB time=00:00:01.16 bitrate=1808.2kbits/s speed=2.22x elapsed=0:00:00.52    [mp4 @ 00000297962ced00] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000029796204580] video:956KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.165064%
+frame=   60 fps=0.0 q=-1.0 Lsize=     958KiB time=00:00:02.32 bitrate=3381.5kbits/s speed=3.25x elapsed=0:00:00.71    
+[libx264 @ 000002979627f6c0] frame I:1     Avg QP:23.92  size: 65167
+[libx264 @ 000002979627f6c0] frame P:15    Avg QP:28.47  size: 20560
+[libx264 @ 000002979627f6c0] frame B:44    Avg QP:32.95  size: 13745
+[libx264 @ 000002979627f6c0] consecutive B-frames:  1.7%  0.0%  5.0% 93.3%
+[libx264 @ 000002979627f6c0] mb I  I16..4: 35.2% 46.1% 18.7%
+[libx264 @ 000002979627f6c0] mb P  I16..4:  9.3%  1.7%  2.6%  P16..4:  7.8%  1.7%  1.0%  0.0%  0.0%    skip:75.9%
+[libx264 @ 000002979627f6c0] mb B  I16..4:  7.4%  0.3%  1.4%  B16..8:  5.0%  0.8%  0.3%  direct: 1.1%  skip:83.7%  L0:36.2% L1:49.2% BI:14.6%
+[libx264 @ 000002979627f6c0] 8x8 transform intra:11.7% inter:9.3%
+[libx264 @ 000002979627f6c0] coded y,uvDC,uvAC intra: 88.9% 24.2% 0.6% inter: 3.9% 1.7% 0.0%
+[libx264 @ 000002979627f6c0] i16 v,h,dc,p:  5%  2% 72% 21%
+[libx264 @ 000002979627f6c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 32% 17% 38%  2%  2%  2%  2%  2%  3%
+[libx264 @ 000002979627f6c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu:  9%  9% 59%  5%  3%  3%  4%  4%  4%
+[libx264 @ 000002979627f6c0] i8c dc,h,v,p: 64% 12% 21%  3%
+[libx264 @ 000002979627f6c0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 000002979627f6c0] ref P L0: 59.6% 11.5% 17.6% 11.2%
+[libx264 @ 000002979627f6c0] ref B L0: 70.8% 23.5%  5.7%
+[libx264 @ 000002979627f6c0] ref B L1: 83.5% 16.5%
+[libx264 @ 000002979627f6c0] kb/s:3261.09
+✅ proyectos\Sitges\Rigging\Rigging Sitges_2.1.mp4: 1.3MB → 0.9MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Sitges\Rigging\Rigging Sitges_3.1.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T10:37:10.000000Z
+  Duration: 00:00:02.40, start: 0.000000, bitrate: 4594 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 315 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T10:37:11.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, 2881 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T10:37:11.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0000021480026b80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0000021480026b80] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 0000021480026b80] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Sitges\Rigging\_compressed_Rigging Sitges_3.1.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T10:37:11.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   44 fps=0.0 q=33.0 size=       0KiB time=00:00:01.68 bitrate=   0.2kbits/s speed=3.33x elapsed=0:00:00.50    [mp4 @ 000002148094dbc0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 00000214fdc40f40] video:75KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 2.102688%
+frame=   60 fps=0.0 q=-1.0 Lsize=      77KiB time=00:00:02.32 bitrate= 270.6kbits/s speed=4.35x elapsed=0:00:00.53    
+[libx264 @ 0000021480026b80] frame I:1     Avg QP:22.59  size: 10529
+[libx264 @ 0000021480026b80] frame P:15    Avg QP:25.27  size:  2737
+[libx264 @ 0000021480026b80] frame B:44    Avg QP:25.10  size:   558
+[libx264 @ 0000021480026b80] consecutive B-frames:  1.7%  0.0%  5.0% 93.3%
+[libx264 @ 0000021480026b80] mb I  I16..4: 16.5% 81.8%  1.8%
+[libx264 @ 0000021480026b80] mb P  I16..4:  0.9%  2.9%  0.0%  P16..4: 18.5%  2.0%  0.6%  0.0%  0.0%    skip:74.9%
+[libx264 @ 0000021480026b80] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8: 11.5%  0.2%  0.0%  direct: 0.0%  skip:88.2%  L0:47.7% L1:52.1% BI: 0.2%
+[libx264 @ 0000021480026b80] 8x8 transform intra:78.8% inter:97.4%
+[libx264 @ 0000021480026b80] coded y,uvDC,uvAC intra: 16.7% 25.3% 4.7% inter: 0.6% 1.0% 0.0%
+[libx264 @ 0000021480026b80] i16 v,h,dc,p: 42% 20% 15% 23%
+[libx264 @ 0000021480026b80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 23% 31%  3%  4%  4%  2%  2%  2%
+[libx264 @ 0000021480026b80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 19% 21% 25%  4% 13%  8%  7%  1%  2%
+[libx264 @ 0000021480026b80] i8c dc,h,v,p: 74% 11% 12%  3%
+[libx264 @ 0000021480026b80] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0000021480026b80] ref P L0: 72.1%  5.7% 15.4%  6.8%
+[libx264 @ 0000021480026b80] ref B L0: 85.7% 10.8%  3.5%
+[libx264 @ 0000021480026b80] ref B L1: 96.8%  3.2%
+[libx264 @ 0000021480026b80] kb/s:253.88
+✅ proyectos\Sitges\Rigging\Rigging Sitges_3.1.mp4: 1.3MB → 0.1MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Sitges\Styleframes\Styleframes_SItges_1.2.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T10:17:07.000000Z
+  Duration: 00:00:02.40, start: 0.000000, bitrate: 3533 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 315 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T10:17:08.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, 3009 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T10:17:09.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000001d2a553e440] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000001d2a553e440] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000001d2a553e440] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Sitges\Styleframes\_compressed_Styleframes_SItges_1.2.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T10:17:09.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   15 fps=0.0 q=33.0 size=       0KiB time=00:00:00.52 bitrate=   0.7kbits/s speed=1.01x elapsed=0:00:00.51    [mp4 @ 000001d2a553a540] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001d2a54c0f40] video:501KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.313270%
+frame=   60 fps=0.0 q=-1.0 Lsize=     503KiB time=00:00:02.32 bitrate=1775.5kbits/s speed=2.34x elapsed=0:00:00.99    
+[libx264 @ 000001d2a553e440] frame I:1     Avg QP:28.82  size: 50876
+[libx264 @ 000001d2a553e440] frame P:17    Avg QP:28.05  size: 14775
+[libx264 @ 000001d2a553e440] frame B:42    Avg QP:31.64  size:  5013
+[libx264 @ 000001d2a553e440] consecutive B-frames:  3.3%  6.7% 10.0% 80.0%
+[libx264 @ 000001d2a553e440] mb I  I16..4: 63.4% 22.8% 13.8%
+[libx264 @ 000001d2a553e440] mb P  I16..4: 17.5%  9.4%  1.6%  P16..4: 33.8%  3.3%  1.5%  0.0%  0.0%    skip:32.9%
+[libx264 @ 000001d2a553e440] mb B  I16..4:  2.1%  0.4%  0.1%  B16..8: 31.7%  1.0%  0.1%  direct: 1.9%  skip:62.8%  L0:47.5% L1:50.0% BI: 2.5%
+[libx264 @ 000001d2a553e440] 8x8 transform intra:28.9% inter:56.8%
+[libx264 @ 000001d2a553e440] coded y,uvDC,uvAC intra: 50.1% 23.5% 8.5% inter: 4.6% 6.3% 0.9%
+[libx264 @ 000001d2a553e440] i16 v,h,dc,p: 22% 20% 46% 11%
+[libx264 @ 000001d2a553e440] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 19% 40%  2%  2%  2%  2%  3%  2%
+[libx264 @ 000001d2a553e440] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 23% 36%  3%  3%  3%  3%  3%  3%
+[libx264 @ 000001d2a553e440] i8c dc,h,v,p: 65% 16% 16%  3%
+[libx264 @ 000001d2a553e440] Weighted P-Frames: Y:17.6% UV:0.0%
+[libx264 @ 000001d2a553e440] ref P L0: 59.9%  7.9% 18.1% 13.0%  1.1%
+[libx264 @ 000001d2a553e440] ref B L0: 81.7% 15.0%  3.3%
+[libx264 @ 000001d2a553e440] ref B L1: 91.7%  8.3%
+[libx264 @ 000001d2a553e440] kb/s:1708.68
+✅ proyectos\Sitges\Styleframes\Styleframes_SItges_1.2.mp4: 1.0MB → 0.5MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Sitges\Styleframes\Styleframes_SItges_2.2.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T10:16:35.000000Z
+  Duration: 00:00:02.40, start: 0.000000, bitrate: 3498 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 315 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T10:16:36.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, 2974 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T10:16:36.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0000016d9da17a40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0000016d9da17a40] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 0000016d9da17a40] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Sitges\Styleframes\_compressed_Styleframes_SItges_2.2.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T10:16:36.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   18 fps=0.0 q=33.0 size=       0KiB time=00:00:00.64 bitrate=   0.6kbits/s speed=1.25x elapsed=0:00:00.51    [mp4 @ 0000016d9fbb1a40] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000016d9d971080] video:280KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.557991%
+frame=   60 fps=0.0 q=-1.0 Lsize=     282KiB time=00:00:02.32 bitrate= 994.3kbits/s speed=2.61x elapsed=0:00:00.88    
+[libx264 @ 0000016d9da17a40] frame I:1     Avg QP:27.06  size: 31146
+[libx264 @ 0000016d9da17a40] frame P:17    Avg QP:27.25  size:  8409
+[libx264 @ 0000016d9da17a40] frame B:42    Avg QP:30.08  size:  2665
+[libx264 @ 0000016d9da17a40] consecutive B-frames:  1.7% 10.0% 15.0% 73.3%
+[libx264 @ 0000016d9da17a40] mb I  I16..4: 55.8% 27.2% 17.0%
+[libx264 @ 0000016d9da17a40] mb P  I16..4: 13.0% 11.5%  1.0%  P16..4: 33.6%  3.9%  1.5%  0.0%  0.0%    skip:35.5%
+[libx264 @ 0000016d9da17a40] mb B  I16..4:  1.2%  0.7%  0.0%  B16..8: 31.4%  1.1%  0.0%  direct: 0.6%  skip:64.9%  L0:50.0% L1:49.2% BI: 0.9%
+[libx264 @ 0000016d9da17a40] 8x8 transform intra:41.1% inter:83.3%
+[libx264 @ 0000016d9da17a40] coded y,uvDC,uvAC intra: 23.7% 25.3% 4.2% inter: 2.8% 5.1% 0.1%
+[libx264 @ 0000016d9da17a40] i16 v,h,dc,p: 26% 40% 18% 16%
+[libx264 @ 0000016d9da17a40] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 24% 40%  2%  1%  1%  2%  1%  2%
+[libx264 @ 0000016d9da17a40] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 37% 20%  3%  2%  3%  3%  3%  3%
+[libx264 @ 0000016d9da17a40] i8c dc,h,v,p: 55% 22% 19%  5%
+[libx264 @ 0000016d9da17a40] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0000016d9da17a40] ref P L0: 62.6%  8.1% 19.5%  9.8%
+[libx264 @ 0000016d9da17a40] ref B L0: 82.1% 15.6%  2.3%
+[libx264 @ 0000016d9da17a40] ref B L1: 93.0%  7.0%
+[libx264 @ 0000016d9da17a40] kb/s:953.51
+✅ proyectos\Sitges\Styleframes\Styleframes_SItges_2.2.mp4: 1.0MB → 0.3MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Sitges\Styleframes\Styleframes_SItges_3.2.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T10:15:54.000000Z
+  Duration: 00:00:02.40, start: 0.000000, bitrate: 3854 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 315 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T10:15:55.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, 3330 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T10:15:55.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000002564b26fc80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000002564b26fc80] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000002564b26fc80] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Sitges\Styleframes\_compressed_Styleframes_SItges_3.2.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T10:15:55.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    7 fps=0.0 q=33.0 size=       0KiB time=00:00:00.20 bitrate=   1.9kbits/s speed=0.39x elapsed=0:00:00.51    [mp4 @ 000002564b26eec0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000002564d7fe280] video:504KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.300093%
+frame=   60 fps=0.0 q=-1.0 Lsize=     505KiB time=00:00:02.32 bitrate=1784.1kbits/s speed=2.39x elapsed=0:00:00.96    
+[libx264 @ 000002564b26fc80] frame I:3     Avg QP:26.20  size: 28211
+[libx264 @ 000002564b26fc80] frame P:24    Avg QP:27.25  size: 10703
+[libx264 @ 000002564b26fc80] frame B:33    Avg QP:29.34  size:  5262
+[libx264 @ 000002564b26fc80] consecutive B-frames: 23.3%  6.7% 10.0% 60.0%
+[libx264 @ 000002564b26fc80] mb I  I16..4: 48.0% 41.8% 10.2%
+[libx264 @ 000002564b26fc80] mb P  I16..4: 18.2% 21.1%  1.5%  P16..4: 16.4%  1.3%  0.6%  0.0%  0.0%    skip:41.0%
+[libx264 @ 000002564b26fc80] mb B  I16..4:  3.0%  1.3%  0.1%  B16..8: 19.0%  0.5%  0.0%  direct: 2.7%  skip:73.3%  L0:42.5% L1:55.8% BI: 1.7%
+[libx264 @ 000002564b26fc80] 8x8 transform intra:47.3% inter:55.2%
+[libx264 @ 000002564b26fc80] coded y,uvDC,uvAC intra: 33.0% 24.5% 8.3% inter: 3.6% 5.9% 1.3%
+[libx264 @ 000002564b26fc80] i16 v,h,dc,p: 26% 25% 35% 14%
+[libx264 @ 000002564b26fc80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 41% 22% 29%  1%  1%  1%  1%  1%  2%
+[libx264 @ 000002564b26fc80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 24% 32%  3%  2%  3%  3%  2%  2%
+[libx264 @ 000002564b26fc80] i8c dc,h,v,p: 64% 18% 15%  3%
+[libx264 @ 000002564b26fc80] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 000002564b26fc80] ref P L0: 69.8%  6.0% 17.1%  7.1%
+[libx264 @ 000002564b26fc80] ref B L0: 84.0% 14.2%  1.8%
+[libx264 @ 000002564b26fc80] ref B L1: 92.1%  7.9%
+[libx264 @ 000002564b26fc80] kb/s:1717.17
+✅ proyectos\Sitges\Styleframes\Styleframes_SItges_3.2.mp4: 1.1MB → 0.5MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Sensory\Animaciones\Navidad.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T14:44:54.000000Z
+  Duration: 00:00:14.08, start: 0.000000, bitrate: 1206 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T14:44:55.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, 800 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T14:44:55.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 00000259972f9ac0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 00000259972f9ac0] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 00000259972f9ac0] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Sensory\Animaciones\_compressed_Navidad.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T14:44:55.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   17 fps=0.0 q=33.0 size=       0KiB time=00:00:00.60 bitrate=   0.6kbits/s speed=1.14x elapsed=0:00:00.52    frame=   58 fps= 56 q=33.0 size=     256KiB time=00:00:02.24 bitrate= 936.4kbits/s speed=2.17x elapsed=0:00:01.03    frame=   92 fps= 59 q=33.0 size=     256KiB time=00:00:03.60 bitrate= 582.6kbits/s speed=2.32x elapsed=0:00:01.55    frame=  130 fps= 63 q=33.0 size=     512KiB time=00:00:05.12 bitrate= 819.3kbits/s speed=2.47x elapsed=0:00:02.07    frame=  165 fps= 64 q=33.0 size=     768KiB time=00:00:06.52 bitrate= 965.0kbits/s speed=2.53x elapsed=0:00:02.57    frame=  212 fps= 68 q=33.0 size=    1024KiB time=00:00:08.40 bitrate= 998.7kbits/s speed=2.71x elapsed=0:00:03.09    frame=  248 fps= 69 q=33.0 size=    1280KiB time=00:00:09.84 bitrate=1065.7kbits/s speed=2.72x elapsed=0:00:03.61    frame=  296 fps= 72 q=33.0 size=    1280KiB time=00:00:11.76 bitrate= 891.7kbits/s speed=2.84x elapsed=0:00:04.13    frame=  336 fps= 72 q=33.0 size=    1536KiB time=00:00:13.36 bitrate= 941.9kbits/s speed=2.88x elapsed=0:00:04.64    [mp4 @ 00000259972c6d00] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 00000259972410c0] video:1626KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.303901%
+frame=  352 fps= 74 q=-1.0 Lsize=    1631KiB time=00:00:14.00 bitrate= 954.3kbits/s speed=2.96x elapsed=0:00:04.73    
+[libx264 @ 00000259972f9ac0] frame I:2     Avg QP:24.92  size: 19414
+[libx264 @ 00000259972f9ac0] frame P:98    Avg QP:26.03  size:  8559
+[libx264 @ 00000259972f9ac0] frame B:252   Avg QP:29.08  size:  3122
+[libx264 @ 00000259972f9ac0] consecutive B-frames:  1.4%  6.3%  9.4% 83.0%
+[libx264 @ 00000259972f9ac0] mb I  I16..4: 32.4% 56.2% 11.5%
+[libx264 @ 00000259972f9ac0] mb P  I16..4: 14.0% 14.0%  0.9%  P16..4: 35.0%  2.9%  0.9%  0.0%  0.0%    skip:32.3%
+[libx264 @ 00000259972f9ac0] mb B  I16..4:  1.7%  1.6%  0.1%  B16..8: 34.7%  1.1%  0.1%  direct: 0.5%  skip:60.3%  L0:47.3% L1:51.0% BI: 1.7%
+[libx264 @ 00000259972f9ac0] 8x8 transform intra:48.8% inter:82.5%
+[libx264 @ 00000259972f9ac0] coded y,uvDC,uvAC intra: 14.5% 17.0% 1.0% inter: 3.4% 4.0% 0.0%
+[libx264 @ 00000259972f9ac0] i16 v,h,dc,p: 19% 31% 16% 34%
+[libx264 @ 00000259972f9ac0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 33% 26% 29%  3%  2%  2%  2%  2%  2%
+[libx264 @ 00000259972f9ac0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31% 16% 35%  4%  3%  3%  3%  3%  2%
+[libx264 @ 00000259972f9ac0] i8c dc,h,v,p: 61% 21% 15%  3%
+[libx264 @ 00000259972f9ac0] Weighted P-Frames: Y:13.3% UV:3.1%
+[libx264 @ 00000259972f9ac0] ref P L0: 65.7%  5.9% 17.2% 10.2%  1.1%
+[libx264 @ 00000259972f9ac0] ref B L0: 84.6% 12.4%  3.0%
+[libx264 @ 00000259972f9ac0] ref B L1: 92.4%  7.6%
+[libx264 @ 00000259972f9ac0] kb/s:945.64
+✅ proyectos\Sensory\Animaciones\Navidad.mp4: 2.0MB → 1.6MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Sensory\Animaciones\Primavera.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T14:45:39.000000Z
+  Duration: 00:00:14.08, start: 0.000000, bitrate: 1204 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T14:45:39.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, 798 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T14:45:40.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000002371fb3a880] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000002371fb3a880] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000002371fb3a880] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Sensory\Animaciones\_compressed_Primavera.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T14:45:40.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   40 fps=0.0 q=33.0 size=       0KiB time=00:00:01.52 bitrate=   0.3kbits/s speed=2.89x elapsed=0:00:00.52    frame=   89 fps= 86 q=33.0 size=     256KiB time=00:00:03.48 bitrate= 602.7kbits/s speed=3.36x elapsed=0:00:01.03    frame=  128 fps= 83 q=33.0 size=     512KiB time=00:00:05.04 bitrate= 832.3kbits/s speed=3.26x elapsed=0:00:01.54    frame=  180 fps= 87 q=33.0 size=     512KiB time=00:00:07.12 bitrate= 589.1kbits/s speed=3.45x elapsed=0:00:02.06    frame=  238 fps= 92 q=33.0 size=     768KiB time=00:00:09.44 bitrate= 666.5kbits/s speed=3.67x elapsed=0:00:02.57    frame=  292 fps= 94 q=33.0 size=    1024KiB time=00:00:11.60 bitrate= 723.2kbits/s speed=3.74x elapsed=0:00:03.09    [mp4 @ 000002371dd89480] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000002371dd02980] video:1307KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.379979%
+frame=  352 fps=100 q=-1.0 Lsize=    1312KiB time=00:00:14.00 bitrate= 767.5kbits/s speed=3.99x elapsed=0:00:03.50    
+[libx264 @ 000002371fb3a880] frame I:4     Avg QP:20.79  size: 32612
+[libx264 @ 000002371fb3a880] frame P:96    Avg QP:24.92  size:  9457
+[libx264 @ 000002371fb3a880] frame B:252   Avg QP:27.66  size:  1186
+[libx264 @ 000002371fb3a880] consecutive B-frames:  1.7%  6.3%  6.8% 85.2%
+[libx264 @ 000002371fb3a880] mb I  I16..4: 47.5% 34.4% 18.1%
+[libx264 @ 000002371fb3a880] mb P  I16..4:  6.9%  8.1%  0.6%  P16..4: 33.5%  5.5%  2.0%  0.0%  0.0%    skip:43.4%
+[libx264 @ 000002371fb3a880] mb B  I16..4:  0.1%  0.1%  0.0%  B16..8: 18.6%  0.3%  0.0%  direct: 0.7%  skip:80.1%  L0:43.4% L1:54.6% BI: 2.0%
+[libx264 @ 000002371fb3a880] 8x8 transform intra:48.4% inter:77.0%
+[libx264 @ 000002371fb3a880] coded y,uvDC,uvAC intra: 20.8% 43.2% 11.8% inter: 2.9% 8.3% 0.2%
+[libx264 @ 000002371fb3a880] i16 v,h,dc,p: 32% 32%  9% 26%
+[libx264 @ 000002371fb3a880] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 19% 35%  3%  3%  3%  3%  4%  3%
+[libx264 @ 000002371fb3a880] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 21% 21% 14%  8%  9%  7%  7%  6%  6%
+[libx264 @ 000002371fb3a880] i8c dc,h,v,p: 45% 26% 18% 11%
+[libx264 @ 000002371fb3a880] Weighted P-Frames: Y:8.3% UV:5.2%
+[libx264 @ 000002371fb3a880] ref P L0: 72.9% 12.5% 11.9%  2.6%  0.1%
+[libx264 @ 000002371fb3a880] ref B L0: 93.6%  5.4%  0.9%
+[libx264 @ 000002371fb3a880] ref B L1: 97.7%  2.3%
+[libx264 @ 000002371fb3a880] kb/s:759.82
+✅ proyectos\Sensory\Animaciones\Primavera.mp4: 2.0MB → 1.3MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Sensory\Animaciones\Sant Jordi.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T14:46:18.000000Z
+  Duration: 00:00:14.08, start: 0.000000, bitrate: 1203 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T14:46:20.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, 796 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T14:46:20.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000002acb1c05400] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000002acb1c05400] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000002acb1c05400] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Sensory\Animaciones\_compressed_Sant Jordi.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T14:46:20.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   25 fps=0.0 q=33.0 size=       0KiB time=00:00:00.92 bitrate=   0.4kbits/s speed=1.79x elapsed=0:00:00.51    frame=   63 fps= 62 q=33.0 size=     256KiB time=00:00:02.44 bitrate= 859.6kbits/s speed=2.39x elapsed=0:00:01.01    frame=   93 fps= 60 q=33.0 size=     512KiB time=00:00:03.64 bitrate=1152.4kbits/s speed=2.35x elapsed=0:00:01.54    frame=  118 fps= 57 q=33.0 size=     768KiB time=00:00:04.64 bitrate=1356.0kbits/s speed=2.23x elapsed=0:00:02.07    frame=  155 fps= 60 q=33.0 size=    1024KiB time=00:00:06.12 bitrate=1370.8kbits/s speed=2.37x elapsed=0:00:02.58    frame=  192 fps= 62 q=33.0 size=    1280KiB time=00:00:07.60 bitrate=1379.8kbits/s speed=2.45x elapsed=0:00:03.09    frame=  230 fps= 64 q=33.0 size=    1536KiB time=00:00:09.12 bitrate=1379.7kbits/s speed=2.52x elapsed=0:00:03.61    frame=  268 fps= 65 q=33.0 size=    1792KiB time=00:00:10.64 bitrate=1379.7kbits/s speed=2.58x elapsed=0:00:04.13    frame=  305 fps= 66 q=33.0 size=    2304KiB time=00:00:12.12 bitrate=1557.3kbits/s speed=2.61x elapsed=0:00:04.64    [mp4 @ 000002acafabfbc0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000002acafa40b40] video:2865KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.170722%
+frame=  352 fps= 68 q=-1.0 Lsize=    2870KiB time=00:00:14.00 bitrate=1679.1kbits/s speed=2.72x elapsed=0:00:05.14    
+[libx264 @ 000002acb1c05400] frame I:3     Avg QP:26.46  size: 67392
+[libx264 @ 000002acb1c05400] frame P:114   Avg QP:29.77  size: 16737
+[libx264 @ 000002acb1c05400] frame B:235   Avg QP:34.36  size:  3500
+[libx264 @ 000002acb1c05400] consecutive B-frames:  4.5% 15.9% 10.2% 69.3%
+[libx264 @ 000002acb1c05400] mb I  I16..4: 11.6% 49.4% 39.0%
+[libx264 @ 000002acb1c05400] mb P  I16..4:  4.4% 15.2%  5.9%  P16..4: 33.5%  4.6%  1.5%  0.0%  0.0%    skip:35.0%
+[libx264 @ 000002acb1c05400] mb B  I16..4:  0.7%  1.5%  0.3%  B16..8: 29.3%  1.3%  0.1%  direct: 0.7%  skip:66.1%  L0:42.2% L1:55.2% BI: 2.6%
+[libx264 @ 000002acb1c05400] 8x8 transform intra:58.9% inter:73.0%
+[libx264 @ 000002acb1c05400] coded y,uvDC,uvAC intra: 51.2% 43.0% 14.2% inter: 5.2% 6.1% 0.4%
+[libx264 @ 000002acb1c05400] i16 v,h,dc,p: 29% 28% 11% 33%
+[libx264 @ 000002acb1c05400] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 33% 24% 14%  4%  4%  5%  5%  5%  6%
+[libx264 @ 000002acb1c05400] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 33% 21% 16%  5%  6%  5%  6%  4%  4%
+[libx264 @ 000002acb1c05400] i8c dc,h,v,p: 42% 24% 24% 10%
+[libx264 @ 000002acb1c05400] Weighted P-Frames: Y:7.9% UV:3.5%
+[libx264 @ 000002acb1c05400] ref P L0: 69.8% 13.2% 11.7%  4.6%  0.7%
+[libx264 @ 000002acb1c05400] ref B L0: 89.2%  9.7%  1.0%
+[libx264 @ 000002acb1c05400] ref B L1: 92.8%  7.2%
+[libx264 @ 000002acb1c05400] kb/s:1666.33
+✅ proyectos\Sensory\Animaciones\Sant Jordi.mp4: 2.0MB → 2.8MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Sensory\Pantallas\Auditorio_Pantalla.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T15:28:37.000000Z
+  Duration: 00:00:13.04, start: 0.000000, bitrate: 1252 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T15:29:54.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, 896 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T15:30:26.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000001d62153ac00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000001d62153ac00] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000001d62153ac00] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Sensory\Pantallas\_compressed_Auditorio_Pantalla.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T15:30:26.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   25 fps=0.0 q=33.0 size=       0KiB time=00:00:00.92 bitrate=   0.4kbits/s speed=1.79x elapsed=0:00:00.51    frame=   61 fps= 59 q=33.0 size=     256KiB time=00:00:02.36 bitrate= 888.8kbits/s speed=2.29x elapsed=0:00:01.03    frame=  102 fps= 66 q=33.0 size=     512KiB time=00:00:04.00 bitrate=1048.7kbits/s speed=2.58x elapsed=0:00:01.54    frame=  137 fps= 67 q=33.0 size=     512KiB time=00:00:05.40 bitrate= 776.8kbits/s speed=2.63x elapsed=0:00:02.05    frame=  178 fps= 69 q=33.0 size=     768KiB time=00:00:07.04 bitrate= 893.7kbits/s speed=2.74x elapsed=0:00:02.56    frame=  219 fps= 71 q=33.0 size=    1024KiB time=00:00:08.68 bitrate= 966.5kbits/s speed=2.82x elapsed=0:00:03.08    frame=  261 fps= 72 q=33.0 size=    1280KiB time=00:00:10.36 bitrate=1012.2kbits/s speed=2.87x elapsed=0:00:03.60    frame=  311 fps= 76 q=33.0 size=    1536KiB time=00:00:12.36 bitrate=1018.1kbits/s speed=   3x elapsed=0:00:04.11    [mp4 @ 000001d62153b440] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001d6214b2c80] video:1807KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.260471%
+frame=  326 fps= 77 q=-1.0 Lsize=    1812KiB time=00:00:12.96 bitrate=1145.3kbits/s speed=3.05x elapsed=0:00:04.25    
+[libx264 @ 000001d62153ac00] frame I:2     Avg QP:23.90  size: 39040
+[libx264 @ 000001d62153ac00] frame P:82    Avg QP:27.27  size: 12705
+[libx264 @ 000001d62153ac00] frame B:242   Avg QP:32.58  size:  3016
+[libx264 @ 000001d62153ac00] consecutive B-frames:  0.6%  0.6%  1.8% 96.9%
+[libx264 @ 000001d62153ac00] mb I  I16..4: 30.4% 33.5% 36.1%
+[libx264 @ 000001d62153ac00] mb P  I16..4:  4.5%  4.1%  1.7%  P16..4: 36.6%  8.0%  3.4%  0.0%  0.0%    skip:41.7%
+[libx264 @ 000001d62153ac00] mb B  I16..4:  0.1%  0.1%  0.3%  B16..8: 33.8%  1.6%  0.2%  direct: 0.4%  skip:63.4%  L0:46.4% L1:51.0% BI: 2.6%
+[libx264 @ 000001d62153ac00] 8x8 transform intra:37.1% inter:57.1%
+[libx264 @ 000001d62153ac00] coded y,uvDC,uvAC intra: 33.0% 33.2% 8.7% inter: 4.1% 4.4% 0.2%
+[libx264 @ 000001d62153ac00] i16 v,h,dc,p: 29% 33% 12% 27%
+[libx264 @ 000001d62153ac00] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31% 28% 27%  2%  2%  2%  3%  2%  3%
+[libx264 @ 000001d62153ac00] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 24% 20%  5%  5%  4%  6%  3%  6%
+[libx264 @ 000001d62153ac00] i8c dc,h,v,p: 54% 23% 17%  6%
+[libx264 @ 000001d62153ac00] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 000001d62153ac00] ref P L0: 62.6% 10.9% 20.6%  6.0%
+[libx264 @ 000001d62153ac00] ref B L0: 89.3%  9.4%  1.2%
+[libx264 @ 000001d62153ac00] ref B L1: 95.1%  4.9%
+[libx264 @ 000001d62153ac00] kb/s:1134.85
+✅ proyectos\Sensory\Pantallas\Auditorio_Pantalla.mp4: 1.9MB → 1.8MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Sensory\Pantallas\Proyector.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T15:39:36.000000Z
+  Duration: 00:00:13.04, start: 0.000000, bitrate: 1059 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T15:39:58.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, 703 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T15:40:10.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000001f63db39100] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000001f63db39100] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000001f63db39100] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Sensory\Pantallas\_compressed_Proyector.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T15:40:10.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   48 fps=0.0 q=33.0 size=       0KiB time=00:00:01.84 bitrate=   0.2kbits/s speed=3.61x elapsed=0:00:00.50    frame=  114 fps=111 q=33.0 size=       0KiB time=00:00:04.48 bitrate=   0.1kbits/s speed=4.36x elapsed=0:00:01.02    frame=  173 fps=112 q=33.0 size=     256KiB time=00:00:06.84 bitrate= 306.7kbits/s speed=4.43x elapsed=0:00:01.54    frame=  212 fps=103 q=33.0 size=     512KiB time=00:00:08.40 bitrate= 499.4kbits/s speed=4.07x elapsed=0:00:02.06    frame=  255 fps= 99 q=33.0 size=     512KiB time=00:00:10.12 bitrate= 414.5kbits/s speed=3.93x elapsed=0:00:02.57    frame=  299 fps= 97 q=33.0 size=     768KiB time=00:00:11.88 bitrate= 529.6kbits/s speed=3.84x elapsed=0:00:03.09    [mp4 @ 000001f63db3ca40] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001f63dac3780] video:1118KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.419525%
+frame=  326 fps= 97 q=-1.0 Lsize=    1123KiB time=00:00:12.96 bitrate= 709.8kbits/s speed=3.87x elapsed=0:00:03.35    
+[libx264 @ 000001f63db39100] frame I:2     Avg QP:21.20  size: 28582
+[libx264 @ 000001f63db39100] frame P:83    Avg QP:24.74  size:  8878
+[libx264 @ 000001f63db39100] frame B:241   Avg QP:27.61  size:  1454
+[libx264 @ 000001f63db39100] consecutive B-frames:  0.6%  1.2%  3.7% 94.5%
+[libx264 @ 000001f63db39100] mb I  I16..4: 17.9% 67.8% 14.3%
+[libx264 @ 000001f63db39100] mb P  I16..4:  2.5%  6.6%  0.3%  P16..4: 31.0%  7.2%  1.9%  0.0%  0.0%    skip:50.6%
+[libx264 @ 000001f63db39100] mb B  I16..4:  0.1%  0.1%  0.0%  B16..8: 23.0%  0.4%  0.0%  direct: 0.2%  skip:76.1%  L0:44.4% L1:54.1% BI: 1.6%
+[libx264 @ 000001f63db39100] 8x8 transform intra:69.3% inter:84.2%
+[libx264 @ 000001f63db39100] coded y,uvDC,uvAC intra: 23.3% 35.0% 17.0% inter: 3.1% 5.8% 0.2%
+[libx264 @ 000001f63db39100] i16 v,h,dc,p: 29% 39% 10% 21%
+[libx264 @ 000001f63db39100] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 21% 19% 44%  2%  3%  2%  4%  2%  3%
+[libx264 @ 000001f63db39100] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 18% 36% 13%  5%  6%  4%  9%  3%  6%
+[libx264 @ 000001f63db39100] i8c dc,h,v,p: 63% 20% 11%  6%
+[libx264 @ 000001f63db39100] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 000001f63db39100] ref P L0: 67.6% 10.8% 18.1%  3.5%
+[libx264 @ 000001f63db39100] ref B L0: 91.8%  7.2%  1.0%
+[libx264 @ 000001f63db39100] ref B L1: 96.5%  3.5%
+[libx264 @ 000001f63db39100] kb/s:702.10
+✅ proyectos\Sensory\Pantallas\Proyector.mp4: 1.6MB → 1.1MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\Sensory\Pantallas\Sant Jordi_Pantalla.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T15:08:38.000000Z
+  Duration: 00:00:13.04, start: 0.000000, bitrate: 856 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 316 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T15:08:40.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, 500 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T15:08:41.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000001f70d852d00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000001f70d852d00] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000001f70d852d00] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\Sensory\Pantallas\_compressed_Sant Jordi_Pantalla.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1000x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T15:08:41.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   27 fps=0.0 q=33.0 size=       0KiB time=00:00:01.00 bitrate=   0.4kbits/s speed=1.95x elapsed=0:00:00.51    frame=   72 fps= 70 q=33.0 size=     256KiB time=00:00:02.80 bitrate= 749.1kbits/s speed=2.73x elapsed=0:00:01.02    frame=  109 fps= 70 q=33.0 size=     512KiB time=00:00:04.28 bitrate= 980.1kbits/s speed=2.76x elapsed=0:00:01.55    frame=  147 fps= 71 q=33.0 size=     768KiB time=00:00:05.80 bitrate=1084.8kbits/s speed=2.81x elapsed=0:00:02.06    frame=  186 fps= 72 q=33.0 size=    1024KiB time=00:00:07.36 bitrate=1139.8kbits/s speed=2.85x elapsed=0:00:02.58    frame=  230 fps= 74 q=33.0 size=    1024KiB time=00:00:09.12 bitrate= 919.8kbits/s speed=2.95x elapsed=0:00:03.09    frame=  275 fps= 76 q=33.0 size=    1280KiB time=00:00:10.92 bitrate= 960.3kbits/s speed=3.02x elapsed=0:00:03.61    [mp4 @ 000001f7103a8c80] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001f70d7bf4c0] video:1613KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.284973%
+frame=  326 fps= 82 q=-1.0 Lsize=    1618KiB time=00:00:12.96 bitrate=1022.7kbits/s speed=3.25x elapsed=0:00:03.98    
+[libx264 @ 000001f70d852d00] frame I:2     Avg QP:24.29  size: 29666
+[libx264 @ 000001f70d852d00] frame P:105   Avg QP:28.12  size: 10321
+[libx264 @ 000001f70d852d00] frame B:219   Avg QP:33.04  size:  2321
+[libx264 @ 000001f70d852d00] consecutive B-frames:  4.9% 13.5%  9.2% 72.4%
+[libx264 @ 000001f70d852d00] mb I  I16..4: 19.2% 55.9% 25.0%
+[libx264 @ 000001f70d852d00] mb P  I16..4:  5.7% 14.3%  1.9%  P16..4: 28.6%  3.3%  1.0%  0.0%  0.0%    skip:45.2%
+[libx264 @ 000001f70d852d00] mb B  I16..4:  0.5%  0.9%  0.1%  B16..8: 23.2%  0.8%  0.1%  direct: 0.5%  skip:73.9%  L0:43.2% L1:54.7% BI: 2.1%
+[libx264 @ 000001f70d852d00] 8x8 transform intra:64.1% inter:83.3%
+[libx264 @ 000001f70d852d00] coded y,uvDC,uvAC intra: 37.3% 36.5% 9.2% inter: 3.3% 5.4% 0.3%
+[libx264 @ 000001f70d852d00] i16 v,h,dc,p: 32% 25% 11% 32%
+[libx264 @ 000001f70d852d00] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 40% 24% 15%  3%  3%  4%  3%  4%  5%
+[libx264 @ 000001f70d852d00] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 41% 22% 14%  4%  4%  5%  4%  4%  3%
+[libx264 @ 000001f70d852d00] i8c dc,h,v,p: 43% 21% 26% 10%
+[libx264 @ 000001f70d852d00] Weighted P-Frames: Y:14.3% UV:1.0%
+[libx264 @ 000001f70d852d00] ref P L0: 67.3% 12.7% 14.4%  4.8%  0.8%
+[libx264 @ 000001f70d852d00] ref B L0: 89.6%  9.1%  1.3%
+[libx264 @ 000001f70d852d00] ref B L1: 94.4%  5.6%
+[libx264 @ 000001f70d852d00] kb/s:1013.13
+✅ proyectos\Sensory\Pantallas\Sant Jordi_Pantalla.mp4: 1.3MB → 1.6MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\ISE\Styleframes\Styleframes_1.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T21:16:21.000000Z
+  Duration: 00:00:02.24, start: 0.000000, bitrate: 4660 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 314 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T21:16:22.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, 4122 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T21:16:23.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000001fe97be59c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000001fe97be59c0] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 000001fe97be59c0] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\ISE\Styleframes\_compressed_Styleframes_1.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T21:16:23.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[mp4 @ 000001fe95d7bd80] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001fe95d01cc0] video:67KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 2.299963%
+frame=   56 fps=0.0 q=-1.0 Lsize=      68KiB time=00:00:02.16 bitrate= 258.3kbits/s speed=4.66x elapsed=0:00:00.46    
+[libx264 @ 000001fe97be59c0] frame I:1     Avg QP:19.79  size:  7813
+[libx264 @ 000001fe97be59c0] frame P:15    Avg QP:21.00  size:  2456
+[libx264 @ 000001fe97be59c0] frame B:40    Avg QP:22.99  size:   571
+[libx264 @ 000001fe97be59c0] consecutive B-frames:  1.8%  7.1%  5.4% 85.7%
+[libx264 @ 000001fe97be59c0] mb I  I16..4: 31.7% 67.3%  1.0%
+[libx264 @ 000001fe97be59c0] mb P  I16..4:  4.5% 13.8%  0.3%  P16..4:  8.6%  0.3%  0.1%  0.0%  0.0%    skip:72.4%
+[libx264 @ 000001fe97be59c0] mb B  I16..4:  0.2%  0.2%  0.0%  B16..8:  5.5%  0.1%  0.0%  direct: 2.3%  skip:91.7%  L0:39.8% L1:58.8% BI: 1.4%
+[libx264 @ 000001fe97be59c0] 8x8 transform intra:71.2% inter:93.4%
+[libx264 @ 000001fe97be59c0] coded y,uvDC,uvAC intra: 5.5% 29.4% 7.6% inter: 0.3% 3.4% 0.0%
+[libx264 @ 000001fe97be59c0] i16 v,h,dc,p: 74% 21%  3%  2%
+[libx264 @ 000001fe97be59c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29%  6% 64%  0%  0%  0%  0%  0%  0%
+[libx264 @ 000001fe97be59c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 45% 17% 22%  4%  2%  3%  3%  3%  1%
+[libx264 @ 000001fe97be59c0] i8c dc,h,v,p: 66% 15% 17%  1%
+[libx264 @ 000001fe97be59c0] Weighted P-Frames: Y:13.3% UV:13.3%
+[libx264 @ 000001fe97be59c0] ref P L0: 68.6%  2.2% 24.2%  4.2%  0.7%
+[libx264 @ 000001fe97be59c0] ref B L0: 74.0% 23.5%  2.5%
+[libx264 @ 000001fe97be59c0] ref B L1: 97.2%  2.8%
+[libx264 @ 000001fe97be59c0] kb/s:241.02
+✅ proyectos\ISE\Styleframes\Styleframes_1.mp4: 1.2MB → 0.1MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\ISE\Styleframes\Styleframes_2.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T21:15:43.000000Z
+  Duration: 00:00:03.24, start: 0.000000, bitrate: 3620 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 315 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T21:15:45.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, 3150 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T21:15:45.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0000019124c7c640] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0000019124c7c640] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 0000019124c7c640] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\ISE\Styleframes\_compressed_Styleframes_2.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T21:15:45.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   24 fps=0.0 q=33.0 size=       0KiB time=00:00:00.88 bitrate=   0.4kbits/s speed= 1.7x elapsed=0:00:00.51    [mp4 @ 00000191271cf040] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000019124c02800] video:263KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.666417%
+frame=   81 fps=0.0 q=-1.0 Lsize=     265KiB time=00:00:03.16 bitrate= 686.8kbits/s speed=3.34x elapsed=0:00:00.94    
+[libx264 @ 0000019124c7c640] frame I:1     Avg QP:25.16  size:  9706
+[libx264 @ 0000019124c7c640] frame P:34    Avg QP:23.21  size:  5527
+[libx264 @ 0000019124c7c640] frame B:46    Avg QP:24.80  size:  1547
+[libx264 @ 0000019124c7c640] consecutive B-frames: 13.6% 24.7% 22.2% 39.5%
+[libx264 @ 0000019124c7c640] mb I  I16..4: 56.1% 41.8%  2.1%
+[libx264 @ 0000019124c7c640] mb P  I16..4: 14.1% 13.6%  0.8%  P16..4: 16.2%  1.6%  0.5%  0.0%  0.0%    skip:53.2%
+[libx264 @ 0000019124c7c640] mb B  I16..4:  0.5%  0.6%  0.1%  B16..8: 15.5%  0.7%  0.0%  direct: 1.4%  skip:81.1%  L0:50.3% L1:48.9% BI: 0.8%
+[libx264 @ 0000019124c7c640] 8x8 transform intra:47.1% inter:89.9%
+[libx264 @ 0000019124c7c640] coded y,uvDC,uvAC intra: 7.1% 44.0% 4.5% inter: 1.1% 7.0% 0.0%
+[libx264 @ 0000019124c7c640] i16 v,h,dc,p: 37% 27% 11% 25%
+[libx264 @ 0000019124c7c640] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 25% 11% 59%  1%  1%  1%  1%  1%  1%
+[libx264 @ 0000019124c7c640] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 18% 28% 35%  3%  3%  2%  5%  1%  4%
+[libx264 @ 0000019124c7c640] i8c dc,h,v,p: 52% 23% 19%  5%
+[libx264 @ 0000019124c7c640] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0000019124c7c640] ref P L0: 75.0%  3.5% 16.6%  4.9%
+[libx264 @ 0000019124c7c640] ref B L0: 83.3% 15.0%  1.7%
+[libx264 @ 0000019124c7c640] ref B L1: 97.4%  2.6%
+[libx264 @ 0000019124c7c640] kb/s:663.73
+✅ proyectos\ISE\Styleframes\Styleframes_2.mp4: 1.4MB → 0.3MB
+ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev13, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.101 / 60. 26.101
+  libavcodec     62. 28.101 / 62. 28.101
+  libavformat    62. 12.101 / 62. 12.101
+  libavdevice    62.  3.101 / 62.  3.101
+  libavfilter    11. 14.101 / 11. 14.101
+  libswscale      9.  5.101 /  9.  5.101
+  libswresample   6.  3.101 /  6.  3.101
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'proyectos\ISE\Styleframes\Styleframes_3.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-06-13T21:14:55.000000Z
+  Duration: 00:00:03.68, start: 0.000000, bitrate: 3344 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 315 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-13T21:14:57.000000Z
+      handler_name    : #Mainconcept MP4 Sound Media Handler
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, 2892 kb/s, 25 fps, 25 tbr, 25k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-13T21:14:58.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+      encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0000019b742a9940] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0000019b742a9940] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 0000019b742a9940] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'proyectos\ISE\Styleframes\_compressed_Styleframes_3.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf62.12.101
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1080, q=2-31, 25 fps, 12800 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.101 libx264
+      creation_time   : 2026-06-13T21:14:58.000000Z
+      handler_name    : ?Mainconcept Video Media Handler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   37 fps=0.0 q=33.0 size=       0KiB time=00:00:01.40 bitrate=   0.3kbits/s speed=2.74x elapsed=0:00:00.51    [mp4 @ 0000019b764beb40] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000019b7422e200] video:222KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.826312%
+frame=   92 fps=0.0 q=-1.0 Lsize=     224KiB time=00:00:03.60 bitrate= 509.8kbits/s speed=4.25x elapsed=0:00:00.84    
+[libx264 @ 0000019b742a9940] frame I:1     Avg QP:24.28  size: 10055
+[libx264 @ 0000019b742a9940] frame P:40    Avg QP:23.38  size:  4142
+[libx264 @ 0000019b742a9940] frame B:51    Avg QP:25.02  size:  1002
+[libx264 @ 0000019b742a9940] consecutive B-frames: 19.6% 13.0% 19.6% 47.8%
+[libx264 @ 0000019b742a9940] mb I  I16..4: 75.7% 23.3%  1.0%
+[libx264 @ 0000019b742a9940] mb P  I16..4:  8.8%  8.8%  0.4%  P16..4: 15.4%  1.2%  0.5%  0.0%  0.0%    skip:64.8%
+[libx264 @ 0000019b742a9940] mb B  I16..4:  0.3%  0.3%  0.0%  B16..8: 12.0%  0.3%  0.0%  direct: 0.6%  skip:86.5%  L0:38.0% L1:61.4% BI: 0.6%
+[libx264 @ 0000019b742a9940] 8x8 transform intra:45.7% inter:94.5%
+[libx264 @ 0000019b742a9940] coded y,uvDC,uvAC intra: 9.1% 45.7% 5.1% inter: 0.9% 4.9% 0.0%
+[libx264 @ 0000019b742a9940] i16 v,h,dc,p: 43% 23% 12% 22%
+[libx264 @ 0000019b742a9940] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 22% 10% 62%  1%  1%  1%  1%  1%  1%
+[libx264 @ 0000019b742a9940] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 18% 31%  5%  4%  4%  4%  3%  3%
+[libx264 @ 0000019b742a9940] i8c dc,h,v,p: 54% 19% 21%  6%
+[libx264 @ 0000019b742a9940] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0000019b742a9940] ref P L0: 71.4%  5.0% 17.2%  6.4%
+[libx264 @ 0000019b742a9940] ref B L0: 85.8% 12.5%  1.7%
+[libx264 @ 0000019b742a9940] ref B L1: 96.6%  3.4%
+[libx264 @ 0000019b742a9940] kb/s:493.10
+✅ proyectos\ISE\Styleframes\Styleframes_3.mp4: 1.5MB → 0.2MB
