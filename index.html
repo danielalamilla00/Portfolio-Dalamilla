@@ -298,9 +298,14 @@
     #floating-bl-anim { width: 22rem; }
     #floating-br-anim { width: 27rem; }
     @media (max-width: 768px) {
-      .floating-obj { width: 20rem; }
-      .floating-tl, .floating-tr { top: 3vh; }
-      .floating-bl, .floating-br { bottom: 3vh; }
+      #floating-tl-anim { width: 13rem; }
+      #floating-tr-anim { width: 9rem; }
+      #floating-bl-anim { width: 10.5rem; }
+      #floating-br-anim { width: 12.5rem; }
+      .floating-tl { top: 0%; left: 0; }
+      .floating-tr { top: 5%; right: 0; }
+      .floating-bl { bottom: 8%; left: 0; }
+      .floating-br { bottom: 2%; right: 0; }
     }
 
     #about-text, #contact-text {
@@ -402,6 +407,7 @@
         font-size: 1.05rem;
         max-width: 520px;
       }
+      #contact-text p { font-size: 2rem; }
     }
 
     /* ── 3D Carousel ─────────────────────────────────────────────────────────── */
