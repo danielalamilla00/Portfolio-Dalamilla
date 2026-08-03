@@ -2621,7 +2621,7 @@
     const img = bannerBank[bannerFrame];
     if (img) {
       const isMobileBanner = window.innerWidth <= CANVAS_MOBILE_BREAKPOINT;
-      const bannerScale = isMobileBanner ? 0.7 : 1; // 30% smaller on mobile
+      const bannerScale = isMobileBanner ? 0.7 : 1.3;
       const dw = bannerCanvas.width * bannerScale;
       const dh = dw * (500 / 1920);
       const dx = (bannerCanvas.width  - dw) * 0.5;
