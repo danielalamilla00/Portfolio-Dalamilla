@@ -242,23 +242,39 @@
   }
 
   /* ── Footer ─────────────────────────────────────────────────────────────── */
-  #wk-footer { padding: 2.5rem; text-align: center; }
-  #wk-footer span {
-    font-family: 'Montserrat', sans-serif; font-weight: 300;
-    font-size: 0.75rem; color: #555; text-transform: uppercase; letter-spacing: 0.05em;
+  .shared-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 2.5rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #161616;
   }
+  .shared-footer img {
+    height: 1.4rem;
+    width: auto;
+    filter: brightness(0);
+  }
+  #wk-footer { padding: 0; }
+  #card-expand-body .shared-footer { color: #161616; }
+  #card-expand-body .shared-footer img { filter: brightness(0); }
 
   /* ── Responsive ─────────────────────────────────────────────────────────── */
 
   @media (max-width: 768px) {
-    .ex-letter { font-size: clamp(2rem, 10vw, 15vw); }
+    .ex-letter { font-size: clamp(1rem, 10vw, 12vw) !important; }
     .ex-marquee-row { margin-bottom: -0.3rem; }
     .ex-marquee-row + .ex-marquee-row { margin-top: 0.15em; }
     #wk-body { padding: 8rem 2.5rem 0; }
     .wk-reel-section { padding: 3rem 0; }
   }
   @media (max-width: 768px) {
-    #wk-grid { max-width: 100%; }
+    .wk-reel-thumb { padding: 0 0 1rem; }
+    .wk-reel-thumb-inner { max-width: 100%; aspect-ratio: 4 / 3; border-radius: 18px; }
+    #wk-grid { max-width: 100%; gap: 0.75rem; }
     .wk-grid-block { display: flex; flex-direction: column; gap: 0.75rem; }
     .wk-grid-card  { aspect-ratio: 4 / 3; }
     .wk-grid-card .c-title { font-size: clamp(1.4rem, 5vw, 2rem); }
@@ -608,8 +624,9 @@
 
 </div>
 
-<footer id="wk-footer">
-  <span>© Alamilla — All rights reserved</span>
+<footer id="wk-footer" class="shared-footer">
+  <span>Made with love by</span>
+  <img src="Logo Alamilla.svg" alt="Alamilla">
 </footer>
 
 <div id="card-expand">
@@ -657,6 +674,11 @@
         </div>
       </div>
       <div id="card-expand-final-videos"></div>
+
+      <div class="shared-footer">
+        <span>Made with love by</span>
+        <img src="Logo Alamilla.svg" alt="Alamilla">
+      </div>
     </div>
     <div id="card-expand-scroll-hint">
       <span>scroll</span>
