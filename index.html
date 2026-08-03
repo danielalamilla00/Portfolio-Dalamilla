@@ -369,19 +369,6 @@
       -webkit-backdrop-filter: blur(18px);
       background: rgba(0,0,0,0.25);
     }
-    @keyframes tdl-in {
-      from { opacity: 0; transform: translateY(-46px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    .tdl-char {
-      display: inline-block;
-      white-space: pre;
-      animation: tdl-in 400ms ease-out both;
-      animation-play-state: paused;
-    }
-    #contact-text.tdl-active .tdl-char {
-      animation-play-state: running;
-    }
     @keyframes label-breath {
       from { opacity: 0.55; transform: scaleY(0.9); }
       to   { opacity: 1;    transform: scaleY(1);   }
@@ -1338,15 +1325,6 @@
   const spacer       = document.getElementById('scroll-spacer');
 
   spacer.style.height = (window.innerHeight * 15) + 'px';
-
-  // ─── Top-down letter animation on contact phone + email ──────────────────────
-  document.querySelectorAll('#contact-text p a').forEach(el => {
-    const text = el.textContent;
-    el.setAttribute('aria-label', text);
-    el.innerHTML = [...text].map((ch, i) =>
-      `<span class="tdl-char" aria-hidden="true" style="animation-delay:${i * 80}ms">${ch}</span>`
-    ).join('');
-  });
 
   // ─── Breathing letter animation on .about-label titles ───────────────────────
   document.querySelectorAll('.about-label').forEach(el => {
@@ -2451,10 +2429,6 @@
 
     const contactVisible = orFrame >= CONTACT_SLIDE_IN_START;
     contactEl.style.visibility = contactVisible ? 'visible' : 'hidden';
-    if (contactVisible && !contactEl.classList.contains('tdl-active')) {
-      contactEl.classList.add('tdl-active');
-    }
-
     let contactTy;
     if (orFrame < CONTACT_SLIDE_IN_START) {
       contactTy = CONTACT_SLIDE_DIST;
