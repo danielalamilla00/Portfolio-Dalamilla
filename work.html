@@ -139,14 +139,15 @@
     margin-right: auto;
   }
   .wk-grid-block { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
-  .wk-grid-card  { position: relative; border-radius: 18px; overflow: hidden; cursor: pointer; opacity: 0; transform: translateY(48px); transition: opacity 0.6s ease, transform 0.6s ease; }
-  .wk-grid-card.card-visible { opacity: 1; transform: translateY(0); }
+  .wk-grid-card  { position: relative; border-radius: 18px; overflow: hidden; cursor: pointer; opacity: 0; transform: translateY(48px) translateZ(0); transition: opacity 0.6s ease, transform 0.6s ease; -webkit-mask-image: -webkit-radial-gradient(white, black); }
+  .wk-grid-card.card-visible { opacity: 1; transform: translateY(0) translateZ(0); }
   .wk-grid-card--paired { aspect-ratio: 1 / 1; order: 0; }
   .wk-grid-card--solo   { aspect-ratio: 2 / 1; grid-column: 1 / span 2; order: 1; }
   .wk-grid-card .c-meta  { padding: 1.5rem 2rem 2rem; }
   .wk-grid-card .c-title { font-size: clamp(1.2rem, 2.2vw, 2.2rem); }
   .wk-media-wrap {
     position: absolute; inset: 0; overflow: hidden;
+    border-radius: inherit;
     background-image: url('Fondo Works.webp');
     background-size: 100% 100vh; background-position: center; background-attachment: fixed;
   }
@@ -273,6 +274,10 @@
     .wk-reel-section { padding: 3rem 0; }
   }
   @media (max-width: 768px) {
+    html, body { background-attachment: scroll; background-size: cover; }
+    .wk-media-wrap { background-attachment: scroll; background-size: cover; }
+    #card-expand-panel { background-attachment: scroll; }
+    #card-expand-body  { background-attachment: scroll; }
     #wk-nav a:last-child { display: none; }
     .wk-reel-thumb { padding: 0 0 1rem; }
     .wk-reel-thumb-inner { max-width: 100%; aspect-ratio: 4 / 3; border-radius: 18px; }
@@ -280,12 +285,17 @@
     .wk-grid-block { display: flex; flex-direction: column; gap: 0.75rem; }
     .wk-grid-card  { aspect-ratio: 4 / 3; }
     .wk-grid-card .c-title { font-size: clamp(1.4rem, 5vw, 2rem); }
-    .c-meta { padding: 2rem 2.5rem 2.5rem; }
-    .c-index { top: 1.25rem; right: 2rem; }
+    .c-meta {
+      top: 0;
+      bottom: auto;
+      padding: 1.5rem 2.25rem 3rem;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%, transparent 100%);
+    }
+    .c-index { top: auto; bottom: 1.25rem; right: 2rem; }
   }
   @media (max-width: 640px) {
     #wk-nav { padding: 1rem 1.25rem; }
-    .c-meta { padding: 1.5rem 1.5rem 2rem; }
+    .c-meta { padding: 1.25rem 2rem 3rem; }
   }
   @media (max-width: 600px) {
     .ex-section-divider { width: calc(100vw - 6rem); margin-left: calc(-50vw + 3rem); }
@@ -384,21 +394,21 @@
   #card-expand-process-videos video,
   #card-expand-final-videos video {
     width: 100%; height: auto; object-fit: contain;
-    border-radius: 8px; display: block; background: #111;
+    border-radius: 14px; display: block; background: #111;
   }
   #card-expand-process-videos[data-project="1"] video {
     aspect-ratio: 1 / 1; object-fit: cover;
   }
   #card-expand-process-images img {
     width: 100%; height: auto; object-fit: contain;
-    border-radius: 8px; display: block; background: #111;
+    border-radius: 14px; display: block; background: #111;
   }
   #card-expand-styleframes img, #card-expand-styleframes video {
     width: 100%; aspect-ratio: 16 / 9; object-fit: cover;
-    border-radius: 8px; display: block; background: #111;
+    border-radius: 14px; display: block; background: #111;
   }
   .ex-final-video-sticky { position: relative; width: 0; height: auto; overflow: visible; }
-  .ex-final-video { position: relative; width: 80vw; height: 45vw; border-radius: 8px; overflow: hidden; }
+  .ex-final-video { position: relative; width: 80vw; height: 45vw; border-radius: 14px; overflow: hidden; }
   .ex-final-video iframe { width: 100%; height: 100%; border: 0; border-radius: inherit; display: block; }
   #card-expand-scroll-hint {
     position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
@@ -435,6 +445,14 @@
     #card-expand-body .ex-body-section:first-of-type { margin-top: 2rem; }
     .ex-meta-label { font-size: 0.95rem; }
     .ex-final-video { width: 90vw; height: 50.625vw; }
+    #card-expand-meta {
+      justify-content: flex-start;
+      padding: 5rem 1.75rem 2rem;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.18) 55%, transparent 100%);
+    }
+    .ex-headline { font-size: 0.85rem; }
+    .ex-title { font-size: clamp(2.5rem, 10vw, 3.5rem); }
+    .ex-desc { font-size: 1.05rem; margin-bottom: 1rem; }
   }
   @media (max-width: 600px) { #card-expand-body { padding: 2.5rem 1.5rem 4rem; } }
   @media (max-width: 480px) { #card-expand-body { padding: 2rem 1rem 3rem; } }
@@ -642,7 +660,6 @@
         <span class="ex-desc"     id="card-expand-desc"></span>
         <div id="card-expand-actions">
           <button class="ex-btn ex-btn-primary" id="card-expand-vimeo">&#9654; Watch on Vimeo</button>
-          <button class="ex-btn ex-btn-ghost"   id="card-expand-close-btn">Close</button>
         </div>
       </div>
     </div>
@@ -752,7 +769,6 @@
   const cardExpandTitle         = document.getElementById('card-expand-title');
   const cardExpandDesc          = document.getElementById('card-expand-desc');
   const cardExpandVimeo         = document.getElementById('card-expand-vimeo');
-  const cardExpandCloseBtn      = document.getElementById('card-expand-close-btn');
   const cardExpandClose         = document.getElementById('card-expand-close');
   const cardExpandBody          = document.getElementById('card-expand-body');
   const cardExpandChallengeVideos = document.getElementById('card-expand-challenge-videos');
@@ -1240,7 +1256,6 @@
 
   // Close handlers — card expand
   cardExpandClose.addEventListener('click', closeCardExpand);
-  cardExpandCloseBtn.addEventListener('click', closeCardExpand);
   cardExpandBackdrop.addEventListener('click', closeCardExpand);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCardExpand(); });
 
