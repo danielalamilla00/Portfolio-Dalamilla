@@ -1296,6 +1296,9 @@
     reelFrame.style.borderRadius = '0px';
 
     setTimeout(() => { reelFrame.style.transition = ''; }, 900);
+
+    if (reelLightbox.requestFullscreen) reelLightbox.requestFullscreen();
+    else if (reelLightbox.webkitRequestFullscreen) reelLightbox.webkitRequestFullscreen();
   }
 
   function closeReelLightbox() {
@@ -1319,6 +1322,11 @@
     reelFrame.style.transition   = `transform 650ms ${FLIP_EASE}, border-radius 650ms ${FLIP_EASE}`;
     reelFrame.style.transform    = `translate(${dx}px,${dy}px) scale(${sx},${sy})`;
     reelFrame.style.borderRadius = '14px';
+
+    if (document.fullscreenElement || document.webkitFullscreenElement) {
+      if (document.exitFullscreen) document.exitFullscreen();
+      else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+    }
 
     setTimeout(() => {
       reelLightbox.classList.remove('is-open');
