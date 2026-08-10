@@ -6,18 +6,19 @@
   <script>if (window.innerWidth <= 768) window.location.replace('work.html');</script>
   <title>Alamilla | Motion & AI Designer</title>
   <link rel="icon" type="image/png" href="Icono WEB.png">
+  <link rel="preload" as="font" type="font/woff2" href="Coolvetica Font/Coolvetica Rg Cond.woff2" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <style>
     /* ── Fonts ───────────────────────────────────────────────────────────────── */
-    @font-face { font-family: 'Coolvetica';     src: url('Coolvetica Font/Coolvetica_Rg.otf');       font-weight: 300; font-display: swap; }
-    @font-face { font-family: 'Coolvetica';     src: url('Coolvetica Font/Coolvetica_Rg_It.otf');    font-style: italic; font-display: swap; }
-    @font-face { font-family: 'CoolveticaCram'; src: url('Coolvetica Font/Coolvetica_Rg_Cram.otf'); font-display: swap; }
-    @font-face { font-family: 'CoolveticaCond'; src: url('Coolvetica Font/Coolvetica_Rg_Cond.otf'); font-display: swap; }
-    @font-face { font-family: 'CoolveticaHv';   src: url('Coolvetica Font/Coolvetica_Hv_Comp.otf'); font-display: swap; }
-    @font-face { font-family: 'Eckmannpsych';   src: url('Eckmannpsych-Medium.ttf'); font-weight: 500; font-display: swap; }
-    @font-face { font-family: 'Adieu';          src: url('Adieu_1.ttf'); font-display: swap; }
+    @font-face { font-family: 'Coolvetica';     src: url('Coolvetica Font/Coolvetica Rg.woff2') format('woff2'), url('Coolvetica Font/Coolvetica Rg.otf') format('opentype');           font-weight: 300; font-display: swap; }
+    @font-face { font-family: 'Coolvetica';     src: url('Coolvetica Font/Coolvetica Rg It.woff2') format('woff2'), url('Coolvetica Font/Coolvetica Rg It.otf') format('opentype');     font-style: italic; font-display: swap; }
+    @font-face { font-family: 'CoolveticaCram'; src: url('Coolvetica Font/Coolvetica Rg Cram.woff2') format('woff2'), url('Coolvetica Font/Coolvetica Rg Cram.otf') format('opentype'); font-display: swap; }
+    @font-face { font-family: 'CoolveticaCond'; src: url('Coolvetica Font/Coolvetica Rg Cond.woff2') format('woff2'), url('Coolvetica Font/Coolvetica Rg Cond.otf') format('opentype'); font-display: swap; }
+    @font-face { font-family: 'CoolveticaHv';   src: url('Coolvetica Font/Coolvetica Hv Comp.woff2') format('woff2'), url('Coolvetica Font/Coolvetica Hv Comp.otf') format('opentype'); font-display: swap; }
+    @font-face { font-family: 'Eckmannpsych';   src: url('Eckmannpsych-Medium.woff2') format('woff2'), url('Eckmannpsych-Medium.ttf') format('truetype'); font-weight: 500; font-display: swap; }
+    @font-face { font-family: 'Adieu';          src: url('Adieu_1.woff2') format('woff2'), url('Adieu_1.ttf') format('truetype'); font-display: swap; }
 
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -459,7 +460,7 @@
       inset: 0;
       border-radius: 18px;
       overflow: hidden;
-      background-image: url('Fondo Tarjetas Proyectos.png');
+      background-image: url('Fondo Tarjetas Proyectos.webp');
       background-size: cover;
       background-position: center;
     }
@@ -616,7 +617,7 @@
       -webkit-overflow-scrolling: touch;
       overscroll-behavior: contain;
       scrollbar-width: none;
-      background-image: url('Fondo Tarjetas Proyectos.png');
+      background-image: url('Fondo Tarjetas Proyectos.webp');
       background-size: cover;
       background-position: top center;
       background-attachment: fixed;
@@ -684,7 +685,7 @@
     #card-expand-body {
       position: relative;
       z-index: 1;
-      background-image: url('Fondo Tarjetas Proyectos.png');
+      background-image: url('Fondo Tarjetas Proyectos.webp');
       background-size: cover;
       background-position: top center;
       background-attachment: fixed;
@@ -1160,22 +1161,22 @@
 <!-- Carousel back layer: z-index 2 (below or-canvas z-3) -->
 <div id="carousel-back" style="opacity:0;visibility:hidden;">
   <div class="c-rotator" id="crot-back">
-    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.png"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
-    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.png"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
-    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.png"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
-    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.png"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
-    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.png"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
+    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.webp"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
+    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.webp"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
+    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.webp"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
+    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.webp"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
+    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.webp"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
   </div>
 </div>
 
 <!-- Carousel front layer: z-index 4 (above or-canvas z-3) -->
 <div id="carousel-front" style="opacity:0;visibility:hidden;">
   <div class="c-rotator" id="crot-front">
-    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.png"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
-    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.png"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
-    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.png"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
-    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.png"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
-    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.png"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
+    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.webp"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
+    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.webp"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
+    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.webp"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
+    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.webp"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
+    <div class="c-card"><div class="c-card-inner"><video class="c-thumb" autoplay loop muted playsinline poster="Fondo Tarjetas Proyectos.webp"></video><div class="c-noise"></div><div class="c-gradient"></div><div class="c-meta"><span class="c-headline"></span><span class="c-title"></span><div class="c-divider"></div><span class="c-desc"></span></div></div></div>
   </div>
 </div>
 

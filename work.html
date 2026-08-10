@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alamilla | Motion & AI Designer</title>
 <link rel="icon" type="image/png" href="Icono WEB.png">
-<link rel="preload" as="image" href="Fondo Works.png">
+<link rel="preload" as="image" href="Fondo Works.webp">
+<link rel="preload" as="font" type="font/woff2" href="Coolvetica Font/Coolvetica Rg Cond.woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -25,14 +26,14 @@
     -webkit-backdrop-filter: blur(0px);
     background: rgba(0,0,0,0);
   }
-  @font-face { font-family: 'Coolvetica';     src: url('Coolvetica Font/Coolvetica Rg.otf')      format('opentype'); font-weight: 300; }
-  @font-face { font-family: 'CoolveticaCond'; src: url('Coolvetica Font/Coolvetica Rg Cond.otf') format('opentype'); }
-  @font-face { font-family: 'Adieu';          src: url('Adieu_1.ttf'); font-display: swap; }
+  @font-face { font-family: 'Coolvetica';     src: url('Coolvetica Font/Coolvetica Rg.woff2') format('woff2'), url('Coolvetica Font/Coolvetica Rg.otf') format('opentype');           font-weight: 300; font-display: swap; }
+  @font-face { font-family: 'CoolveticaCond'; src: url('Coolvetica Font/Coolvetica Rg Cond.woff2') format('woff2'), url('Coolvetica Font/Coolvetica Rg Cond.otf') format('opentype'); font-display: swap; }
+  @font-face { font-family: 'Adieu';          src: url('Adieu_1.woff2') format('woff2'), url('Adieu_1.ttf') format('truetype'); font-display: swap; }
   :root { --ease-out: cubic-bezier(0.16, 1, 0.3, 1); }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
     background-color: #000;
-    background-image: url('Fondo Works.png');
+    background-image: url('Fondo Works.webp');
     background-size: 100% 100%; background-position: center;
     background-repeat: no-repeat; background-attachment: fixed;
     color: #fff; min-height: 100vh; overflow-x: clip;
@@ -146,7 +147,7 @@
   .wk-grid-card .c-title { font-size: clamp(1.2rem, 2.2vw, 2.2rem); }
   .wk-media-wrap {
     position: absolute; inset: 0; overflow: hidden;
-    background-image: url('Fondo Works.png');
+    background-image: url('Fondo Works.webp');
     background-size: 100% 100vh; background-position: center; background-attachment: fixed;
   }
   .wk-media {
@@ -311,7 +312,7 @@
     border-radius: 0; overflow-y: auto; overflow-x: hidden;
     -webkit-overflow-scrolling: touch; overscroll-behavior: contain;
     scrollbar-width: none; visibility: hidden;
-    background-image: url('Fondo Tarjetas Proyectos.png');
+    background-image: url('Fondo Tarjetas Proyectos.webp');
     background-size: cover; background-position: top center;
     background-attachment: fixed; background-repeat: no-repeat;
     transform-origin: top left; will-change: transform, border-radius;
@@ -352,7 +353,7 @@
   .ex-btn-ghost   { background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.22); }
   #card-expand-body {
     position: relative; z-index: 1; color: #161616;
-    background-image: url('Fondo Tarjetas Proyectos.png');
+    background-image: url('Fondo Tarjetas Proyectos.webp');
     background-size: cover; background-position: top center;
     background-attachment: fixed; background-repeat: no-repeat;
     border-radius: 0; padding: 3.5rem 2.5rem 5rem;
@@ -469,7 +470,7 @@
 
       <article class="wk-grid-card" data-project-index="0" tabindex="0">
         <div class="wk-media-wrap">
-          <video class="wk-media" src="Video Carrousel/Caprabo Video Carrusel.mp4" autoplay muted loop playsinline></video>
+          <video class="wk-media" data-src="Video Carrousel/Caprabo Video Carrusel_thumb.mp4" muted loop playsinline preload="none"></video>
           <div class="c-noise"></div>
           <div class="c-gradient"></div>
         </div>
@@ -482,7 +483,7 @@
 
       <article class="wk-grid-card" data-project-index="1" tabindex="0">
         <div class="wk-media-wrap">
-          <video class="wk-media" src="proyectos/Hummel Valencia Baket/Hummel Valencia Basket_Tarjeta.mp4" autoplay muted loop playsinline></video>
+          <video class="wk-media" data-src="proyectos/Hummel Valencia Baket/Hummel Valencia Basket_Tarjeta_thumb.mp4" muted loop playsinline preload="none"></video>
           <div class="c-noise"></div>
           <div class="c-gradient"></div>
         </div>
@@ -495,7 +496,7 @@
 
       <article class="wk-grid-card" data-project-index="2" tabindex="0">
         <div class="wk-media-wrap">
-          <video class="wk-media" src="proyectos/Hummel Betis/Hummel Betis_Tarjeta.mp4" autoplay muted loop playsinline></video>
+          <video class="wk-media" data-src="proyectos/Hummel Betis/Hummel Betis_Tarjeta_thumb.mp4" muted loop playsinline preload="none"></video>
           <div class="c-noise"></div>
           <div class="c-gradient"></div>
         </div>
@@ -513,7 +514,7 @@
 
       <article class="wk-grid-card" data-project-index="3" tabindex="0">
         <div class="wk-media-wrap">
-          <video class="wk-media" src="proyectos/Spotify/Portada_Spotify Daylist.mp4" autoplay muted loop playsinline></video>
+          <video class="wk-media" data-src="proyectos/Spotify/Portada_Spotify Daylist_thumb.mp4" muted loop playsinline preload="none"></video>
           <div class="c-noise"></div>
           <div class="c-gradient"></div>
         </div>
@@ -526,7 +527,7 @@
 
       <article class="wk-grid-card" data-project-index="4" tabindex="0">
         <div class="wk-media-wrap">
-          <video class="wk-media" src="Video Carrousel/Sitges Video Carrusel.mp4" autoplay muted loop playsinline></video>
+          <video class="wk-media" data-src="Video Carrousel/Sitges Video Carrusel_thumb.mp4" muted loop playsinline preload="none"></video>
           <div class="c-noise"></div>
           <div class="c-gradient"></div>
         </div>
@@ -539,7 +540,7 @@
 
       <article class="wk-grid-card" data-project-index="5" tabindex="0">
         <div class="wk-media-wrap">
-          <video class="wk-media" src="proyectos/Estiu TMM/Styleframes/Styleframes 1.mp4" autoplay muted loop playsinline></video>
+          <video class="wk-media" data-src="proyectos/Estiu TMM/Styleframes/Styleframes 1_thumb.mp4" muted loop playsinline preload="none"></video>
           <div class="c-noise"></div>
           <div class="c-gradient"></div>
         </div>
@@ -557,7 +558,7 @@
 
       <article class="wk-grid-card" data-project-index="6" tabindex="0">
         <div class="wk-media-wrap">
-          <video class="wk-media" src="Video Carrousel/Sensory Video Carrusel.mp4" autoplay muted loop playsinline></video>
+          <video class="wk-media" data-src="Video Carrousel/Sensory Video Carrusel_thumb.mp4" muted loop playsinline preload="none"></video>
           <div class="c-noise"></div>
           <div class="c-gradient"></div>
         </div>
@@ -570,7 +571,7 @@
 
       <article class="wk-grid-card" data-project-index="7" tabindex="0">
         <div class="wk-media-wrap">
-          <video class="wk-media" src="Video Carrousel/Fallas Video Carrusel.mp4" autoplay muted loop playsinline></video>
+          <video class="wk-media" data-src="Video Carrousel/Fallas Video Carrusel_thumb.mp4" muted loop playsinline preload="none"></video>
           <div class="c-noise"></div>
           <div class="c-gradient"></div>
         </div>
@@ -583,7 +584,7 @@
 
       <article class="wk-grid-card" data-project-index="8" tabindex="0">
         <div class="wk-media-wrap">
-          <video class="wk-media" src="proyectos/ISE/Stand.mp4" autoplay muted loop playsinline></video>
+          <video class="wk-media" data-src="proyectos/ISE/Stand_thumb.mp4" muted loop playsinline preload="none"></video>
           <div class="c-noise"></div>
           <div class="c-gradient"></div>
         </div>
@@ -1327,10 +1328,18 @@
         const card = entry.target;
         const index = [...document.querySelectorAll('.wk-grid-card')].indexOf(card);
         setTimeout(() => card.classList.add('card-visible'), index * 80);
+
+        const video = card.querySelector('video.wk-media');
+        if (video && video.dataset.src && !video.src) {
+          video.src = video.dataset.src;
+          video.load();
+          video.play().catch(() => {});
+        }
+
         cardObserver.unobserve(card);
       }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.12, rootMargin: '200px 0px' });
 
   document.querySelectorAll('.wk-grid-card').forEach(card => cardObserver.observe(card));
 
