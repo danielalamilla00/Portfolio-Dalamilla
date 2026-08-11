@@ -1021,8 +1021,8 @@
     }
     .ex-final-video {
       position: relative;
-      width: 65vw;
-      height: 36.5625vw; /* maintain 16:9 */
+      width: 80vw;
+      height: 45vw; /* maintain 16:9 */
       border-radius: 8px;
       overflow: hidden;
     }
@@ -1701,7 +1701,7 @@
   // ── "FINAL RESULT" video — center the breakout video (80vw desktop, 90vw mobile) ──
   function updateFinalVideoLayout() {
     const vw = window.innerWidth;
-    const ratio = vw <= 768 ? 0.9 : 0.65;
+    const ratio = vw <= 768 ? 0.9 : 0.8;
     const width = vw * ratio;
     const desiredLeft = (vw - width) / 2;
 
