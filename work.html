@@ -689,7 +689,7 @@
         <p class="ex-body-text" id="ex-final-text"></p>
         <div class="ex-final-video-sticky" id="ex-final-video-sticky" style="display:none;">
           <div class="ex-final-video" id="ex-final-video">
-            <iframe id="ex-final-video-iframe" src="" title="Final result video" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="ex-final-video-iframe" src="" title="Final result video" frameborder="0" allow="autoplay; picture-in-picture"></iframe>
           </div>
         </div>
       </div>
@@ -906,7 +906,7 @@
       processImages: [],
       finalResult: "The final video delivers a punchy, on-brand spot that captures Ron Barceló's vibrant summer spirit, ready for use across the brand's digital and social platforms.",
       finalResultVideos: [],
-      finalResultYoutube: 'https://www.youtube.com/embed/5WaeriTbu4o',
+      finalResultYoutube: 'https://www.youtube.com/embed/xl-ippbsmck',
       role: 'Motion Design, Editing', tools: 'After Effects', vimeoUrl: '',
       video: 'proyectos/Estiu TMM/Styleframes/Styleframes 1.mp4'
     },
@@ -1068,12 +1068,12 @@
       finalText.textContent   = p.finalResult || '';
       finalText.style.display = (!p.finalResult && finalEmbedUrl) ? 'none' : '';
 
-      const defaultIframe = '<iframe id="ex-final-video-iframe" src="" title="Final result video" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+      const defaultIframe = '<iframe id="ex-final-video-iframe" src="" title="Final result video" frameborder="0" allow="autoplay; picture-in-picture"></iframe>';
       if (finalEmbedUrl) {
         finalVideoSticky.style.display = '';
         if (finalYoutubeUrl) {
           document.getElementById('ex-final-video').innerHTML =
-            `<iframe id="ex-final-video-iframe" width="100%" height="100%" src="${finalYoutubeUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+            `<iframe id="ex-final-video-iframe" width="100%" height="100%" src="${finalYoutubeUrl}?fs=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
         } else {
           document.getElementById('ex-final-video').innerHTML = defaultIframe;
           document.getElementById('ex-final-video-iframe').src = finalEmbedUrl;
