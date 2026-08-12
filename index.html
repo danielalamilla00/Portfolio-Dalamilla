@@ -7,6 +7,7 @@
   <title>Alamilla | Motion & AI Designer</title>
   <link rel="icon" type="image/png" href="Icono WEB.png">
   <link rel="preload" as="font" type="font/woff2" href="Coolvetica Font/Coolvetica Rg Cond.woff2" crossorigin>
+  <link rel="preload" as="image" href="Render 5/Render 5000.webp" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -1281,7 +1282,9 @@
   const BG_OR_SYNC   = 273; // OR frame that coincides with BG's last frame (280)
   const BG_PHASE_END = BG_OR_SYNC / (OR_TOTAL - 1); // progress fraction at sync point
   const BANNER_TOTAL = 180;
-  const CRITICAL     = 30; // frames per sequence needed before starting
+  const CRITICAL_OR     = 30; // orange is the foreground hero visual — keep full critical count
+  const CRITICAL_BG     = 15; // background layer, less perceptually important for first paint
+  const CRITICAL_BANNER = 15; // low-opacity secondary layer, less perceptually important for first paint
 
   // TEMP: "Watch more projects here" button disabled until further notice
   const MORPH_BUTTON_ENABLED = true;
@@ -2522,21 +2525,22 @@
   }
 
   // ─── Progressive loading ──────────────────────────────────────────────────────
-  function loadOne(src, bank, idx) {
+  function loadOne(src, bank, idx, priority) {
     return new Promise(resolve => {
       const img  = new Image();
+      if (priority) img.fetchPriority = priority;
       img.onload  = () => { bank[idx] = img; resolve(); console.log('Loaded:', src); };
       img.onerror = () => { resolve(); console.error('FAILED:', src); };
       img.src     = src;
     });
   }
 
-  async function loadBatch(pathFn, bank, from, to, onFrame) {
+  async function loadBatch(pathFn, bank, from, to, onFrame, priority) {
     const BATCH = 10;
     for (let i = from; i < to; i += BATCH) {
       const promises = [];
       for (let j = i; j < Math.min(i + BATCH, to); j++) {
-        promises.push(loadOne(pathFn(j), bank, j).then(() => { if (onFrame) onFrame(); }));
+        promises.push(loadOne(pathFn(j), bank, j, priority).then(() => { if (onFrame) onFrame(); }));
       }
       await Promise.all(promises);
     }
@@ -2546,9 +2550,9 @@
     resizeCanvas();
 
     // ── Phase 1: load critical frames ─────────────────────────────────────────
-    const critBg     = Math.min(CRITICAL, BG_TOTAL);
-    const critOr     = Math.min(CRITICAL, OR_TOTAL);
-    const critBanner = Math.min(CRITICAL, BANNER_TOTAL);
+    const critBg     = Math.min(CRITICAL_BG, BG_TOTAL);
+    const critOr     = Math.min(CRITICAL_OR, OR_TOTAL);
+    const critBanner = Math.min(CRITICAL_BANNER, BANNER_TOTAL);
 
     const critTotal    = critBg + critOr + critBanner;
     let   critDone     = 0;
@@ -2559,9 +2563,9 @@
     }
 
     await Promise.all([
-      loadBatch(bgPath,     bgBank,     0, critBg,     onCritFrame),
-      loadBatch(orPath,     orBank,     0, critOr,     onCritFrame),
-      loadBatch(bannerPath, bannerBank, 0, critBanner, onCritFrame),
+      loadBatch(bgPath,     bgBank,     0, critBg,     onCritFrame, 'low'),
+      loadBatch(orPath,     orBank,     0, critOr,     onCritFrame, 'high'),
+      loadBatch(bannerPath, bannerBank, 0, critBanner, onCritFrame, 'low'),
     ]);
 
     start(); // hide loader, begin animation
@@ -2579,9 +2583,9 @@
       }
 
       Promise.all([
-        loadBatch(bgPath,     bgBank,     critBg,     BG_TOTAL,     onRemFrame),
-        loadBatch(orPath,     orBank,     critOr,     OR_TOTAL,     onRemFrame),
-        loadBatch(bannerPath, bannerBank, critBanner, BANNER_TOTAL, onRemFrame),
+        loadBatch(bgPath,     bgBank,     critBg,     BG_TOTAL,     onRemFrame, 'low'),
+        loadBatch(orPath,     orBank,     critOr,     OR_TOTAL,     onRemFrame, 'low'),
+        loadBatch(bannerPath, bannerBank, critBanner, BANNER_TOTAL, onRemFrame, 'low'),
       ]);
     }
   }
