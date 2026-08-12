@@ -1445,6 +1445,7 @@
     {
       headline: 'Holograms to Enhance the Shopping Experience',
       title:    'Caprabo',
+      slug:     'caprabo',
       desc:     'Holographic 3D animations with a realistic floating effect.',
       fullDesc: "During 2025, Caprabo L'Illa Diagonal invested in renovating one of its spaces in Barcelona. Holograms played a key role in presenting products in a more attractive way, enhancing the in-store shopping experience. The animations were developed in Cinema 4D, utilizing high-contrast lighting and MoGraph dynamics against absolute black backgrounds to create a realistic floating effect. By optimizing materials and 3D perspectives, the team ensured the products gained the necessary depth to capture customer attention effectively.",
       challenge: "At Caprabo, the work involved animating all the store's offers and promotions across the new in-store screens — supermarkets aren't typically spaces designed with experience in mind, and the goal was to make everyday content feel engaging. The centerpiece of the project, however, was the holographic display: 3D animations designed to bring products to life and stand out in a way flat screens couldn't.",
@@ -1476,6 +1477,7 @@
     {
       headline: "A Kinetic Spot for Waapiti's CMS",
       title:    'Waapiti',
+      slug:     'waapiti',
       desc:     "A kinetic typography spot explaining Waapiti's CMS platform for digital signage, built to communicate what it does in seconds.",
       challenge: "Waapiti needed a short, fast-paced explainer spot that could distill what its CMS platform actually does — automated content management, full control over players, and access for every type of user, from clients to integrators — into something visual and immediate, without relying on a product demo or voiceover.",
       challengeVideos: [],
@@ -1498,6 +1500,7 @@
     {
       headline: 'Spotify Daylist',
       title:    'Spotify Daylist',
+      slug:     'spotify-daylist',
       desc:     "A paid advertising campaign for Spotify's Daylist feature, translating its ever-changing, personalized playlists into a bold, mobile-first ad designed for social media promotion.",
       challenge: "The goal was to create a paid social media ad campaign that visually captures the personality of Spotify's Daylist feature — a playlist that updates throughout the day based on mood and moment — in a short, punchy vertical video built to run as sponsored content, feeling native to social platforms while reflecting Spotify's playful, ever-shifting brand voice.",
       challengeVideos: [],
@@ -1520,6 +1523,7 @@
     {
       headline: 'A Concept Launch Film for Gemini 3',
       title:    'Gemini 3',
+      slug:     'gemini-3',
       desc:     'A concept spot imagining how Gemini 3 could be introduced — blending real product UI with AI-generated payoff.',
       challenge: "Exploring how a Gemini 3 launch film could look and feel — starting from the product's own interface and turning it into a short narrative moment.",
       challengeVideos: [],
@@ -1542,6 +1546,7 @@
     {
       headline: 'A Sponsorship Film Built for the Pitch',
       title:    'Hummel x Betis',
+      slug:     'hummel-betis',
       desc:     "A paid advertising campaign celebrating Hummel's kit sponsorship of Real Betis, created as a matchday launch ad for the club's football fanbase, generated with Veo and composited in After Effects.",
       challenge: "Real Betis's new Hummel-sponsored kit needed a paid matchday launch ad built for the club's football audience — capturing the verdiblanco identity and translating the kit's colours and crest into a short, high-impact advertisement without a traditional shoot.",
       challengeVideos: [],
@@ -1947,11 +1952,30 @@
     });
   }
 
-  function openCardExpand(card, projectIndex) {
+  function openCardExpand(card, projectIndex, options = {}) {
     if (expandedCard) return;
     expandedCard = card;
     const p = projects[projectIndex];
     populateExpandContent(p, card);
+
+    if (!options.skipHistory && p.slug) {
+      history.pushState({ projectSlug: p.slug }, '', '#' + p.slug);
+    }
+
+    if (options.instant) {
+      // Deep-linked load: the carousel may not be visible/rotated to this card yet,
+      // so skip the FLIP animation and open straight to full screen.
+      expandOrigin = null;
+      cardExpandPanel.style.visibility = 'visible';
+      cardExpandPanel.style.transition = 'none';
+      cardExpandPanel.style.transformOrigin = '50% 50%';
+      cardExpandPanel.style.transform    = 'translate(0, 0) scale(1, 1)';
+      cardExpandPanel.style.borderRadius = '0px';
+      cardExpand.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+      requestAnimationFrame(updateFinalVideoLayout);
+      return;
+    }
 
     // ── FLIP: First ────────────────────────────────────────────────────────
     const from = card.getBoundingClientRect();
@@ -1988,10 +2012,14 @@
     cardExpandPanel.addEventListener('transitionend', updateFinalVideoLayout, { once: true });
   }
 
-  function closeCardExpand() {
+  function closeCardExpand(skipHistory = false) {
     if (!expandedCard) return;
     const card = expandedCard;
     expandedCard = null;
+
+    if (!skipHistory && location.hash) {
+      history.pushState(null, '', location.pathname + location.search);
+    }
 
     cardExpand.classList.remove('is-open');
     cardExpandPanel.removeEventListener('scroll', onExpandParallax);
@@ -2021,6 +2049,10 @@
         'transform 600ms cubic-bezier(0.76, 0, 0.24, 1), border-radius 600ms cubic-bezier(0.76, 0, 0.24, 1)';
       cardExpandPanel.style.transform    = `translate(${dx}px, ${dy}px) scale(${scaleX}, ${scaleY})`;
       cardExpandPanel.style.borderRadius = '18px';
+    } else {
+      // Opened instantly via deep link — no card rect to FLIP back to, so fade instead.
+      cardExpandPanel.style.transition = 'opacity 400ms ease-out';
+      cardExpandPanel.style.opacity    = '0';
     }
 
     ['ex-heading-1', 'ex-heading-2', 'ex-heading-3'].forEach(id => {
@@ -2035,6 +2067,7 @@
       cardExpandPanel.style.visibility = 'hidden';
       cardExpandPanel.style.transition = 'none';
       cardExpandPanel.style.transform  = '';
+      cardExpandPanel.style.opacity    = '';   // reset for next open
       cardExpandVideo.src              = '';
       cardExpandVideo.style.opacity    = '1';  // reset for next open
       cardExpandVideo.style.transition = '';
@@ -2062,6 +2095,27 @@
     card.addEventListener('keydown', e => {
       if (e.key === 'Enter') openCardExpand(card, i);
     });
+  });
+
+  // ── Deep linking: open a project panel directly via #slug in the URL ──────
+  function openProjectBySlug(slug, skipHistory) {
+    const index = projects.findIndex(p => p.slug === slug);
+    if (index === -1) return;
+    openCardExpand(frontCards[index], index, { instant: true, skipHistory });
+  }
+
+  const initialSlug = location.hash.replace('#', '');
+  if (initialSlug) {
+    requestAnimationFrame(() => openProjectBySlug(initialSlug, true));
+  }
+
+  window.addEventListener('popstate', () => {
+    const slug = location.hash.replace('#', '');
+    if (slug && !expandedCard) {
+      openProjectBySlug(slug, true);
+    } else if (!slug && expandedCard) {
+      closeCardExpand(true);
+    }
   });
 
   // smootherstep (C² continuity) — zero velocity AND zero acceleration at endpoints
