@@ -1104,9 +1104,44 @@
     @media (max-width: 480px) {
       #card-expand-body { padding: 2rem 1rem 3rem; }
     }
+
+    /* ── Site navbar ─────────────────────────────────────────────────── */
+    #site-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.75rem 2.5rem;
+      pointer-events: none;
+    }
+    #site-nav .nav-logo {
+      height: 2.2rem;
+      filter: brightness(0) invert(1);
+      pointer-events: auto;
+    }
+    #site-nav .nav-label {
+      font-family: 'Adieu', sans-serif;
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      pointer-events: auto;
+    }
+    @media (max-width: 768px) {
+      #site-nav { padding: 1.25rem 1.5rem; }
+      #site-nav .nav-logo  { height: 1.7rem; }
+      #site-nav .nav-label { font-size: 0.75rem; }
+    }
   </style>
 </head>
 <body>
+
+<nav id="site-nav">
+  <img class="nav-logo" src="Logo Alamilla.svg" alt="Alamilla">
+  <span class="nav-label">Motion &amp; AI Designer</span>
+</nav>
 
 <div id="bg-progress-bar" style="display:none"><div id="bg-progress"></div></div>
 
