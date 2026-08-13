@@ -1231,7 +1231,7 @@
       <div class="ex-body-section">
         <div class="ex-section-heading" id="ex-heading-3"></div>
         <div class="ex-section-divider"></div>
-        <p class="ex-body-text" id="ex-final-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</p>
+        <p class="ex-body-text" id="ex-final-text" style="display:none;"></p>
         <div class="ex-final-video-sticky" id="ex-final-video-sticky" style="display:none;">
           <div class="ex-final-video" id="ex-final-video">
             <iframe id="ex-final-video-iframe" src="" title="Final result video" frameborder="0" allow="autoplay; picture-in-picture"></iframe>
@@ -1460,7 +1460,7 @@
         'proyectos/Caprabo/Montaje/Halloween_Montaje.mp4',
         'proyectos/Caprabo/Montaje/Navidad_Montaje.mp4'
       ],
-      finalResult: "The animations now run throughout the store on Caprabo's new screens, turning everyday promotions into a more dynamic part of the shopping experience — with the holographic product displays becoming a distinctive feature of the renovated space. You can find the store at L'Illa Diagonal shopping centre in Barcelona — go check it out!",
+      finalResult: '',
       finalResultVideos: [
         'proyectos/Caprabo/Ventilador/Ventilador_Globos.mp4',
         'proyectos/Caprabo/Ventilador/Ventilador_Halloween.mp4',
@@ -1488,7 +1488,7 @@
         'proyectos/ISE/Styleframes/Styleframes_3.mp4'
       ],
       processImages: [],
-      finalResult: "The spot became Waapiti's go-to explainer piece, giving the brand a quick, on-brand way to introduce its CMS to new clients and integrators alike.",
+      finalResult: '',
       finalResultVideos: [],
       finalResultYoutube: 'https://www.youtube.com/embed/ARgKpomcNoU',
       role:     'Motion Designer, Art Director',
@@ -1511,7 +1511,7 @@
         'proyectos/Spotify/Styleframes/Spotify Daylist_Styleframes 3.mp4'
       ],
       processImages: [],
-      finalResult: "The final video delivers a vibrant, on-brand promo for Spotify Daylist that captures the feature's playful, ever-changing personality in a fast, mobile-first format.",
+      finalResult: '',
       finalResultVideos: [],
       finalResultYoutube: 'https://www.youtube.com/embed/IXRR8XM6_7k',
       role:     'Motion Design, Editing',
@@ -1534,7 +1534,7 @@
         'proyectos/Gemini/Styleframes/Gemini_Styleframes 3.mp4'
       ],
       processImages: [],
-      finalResult: "A short concept film that doubles as a playground for exploring what Gemini itself can generate — and a good excuse to test the tool while making something worth watching.",
+      finalResult: '',
       finalResultVideos: [],
       finalResultYoutube: 'https://www.youtube.com/embed/WInNSqUsuc8',
       role:     'Concept, Motion Design, Editing',
@@ -1556,7 +1556,7 @@
         'proyectos/Hummel Betis/Styleframes/Styleframes 2.mp4',
         'proyectos/Hummel Betis/Styleframes/Styleframes 3.mp4'
       ],
-      finalResult: "The final film captures the kit in motion — from close-up fabric detail to full-pitch energy — giving Hummel and Real Betis a launch piece that feels every bit as fast as the game it represents.",
+      finalResult: '',
       finalResultYoutube: 'https://www.youtube.com/embed/ZtjXZlHdD70',
       role:     'Motion Designer',
       tools:    'Veo, After Effects',
@@ -1828,10 +1828,9 @@
     if (p.finalResult) {
       finalText.textContent   = p.finalResult;
       finalText.style.display = '';
-    } else if (finalEmbedUrl) {
-      finalText.style.display = 'none';
     } else {
-      finalText.style.display = '';
+      finalText.textContent   = '';
+      finalText.style.display = 'none';
     }
 
     const defaultFinalIframeHtml = '<iframe id="ex-final-video-iframe" src="" title="Final result video" frameborder="0" allow="autoplay; picture-in-picture"></iframe>';
