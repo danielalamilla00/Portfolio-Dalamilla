@@ -2596,6 +2596,13 @@
       requestAnimationFrame(carouselLoop);  // start carousel animation loop
 
       window.addEventListener('scroll', onScroll, { passive: true });
+
+      if (location.hash === '#projects') {
+        const targetFrame = 140;
+        const maxScroll   = spacer.offsetTop + spacer.offsetHeight - window.innerHeight;
+        window.scrollTo({ top: (targetFrame / OR_TOTAL) * maxScroll, behavior: 'instant' });
+        history.replaceState(null, '', location.pathname);
+      }
     }, 250);
   }
 
