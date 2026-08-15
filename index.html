@@ -2361,8 +2361,8 @@
     // About text — enters from fully below viewport (frames 263-268), sticky hold, then exits upward
     const ABOUT_SLIDE_IN_START = 257;
     const ABOUT_ENTRY   = 268;
-    const ABOUT_EXIT    = 312;
-    const ABOUT_END     = 330;
+    const ABOUT_EXIT    = 300;
+    const ABOUT_END     = 318;
     const ABOUT_SLIDE_OUT_DUR = ABOUT_END - ABOUT_EXIT;
     const ABOUT_EXIT_DIST     = window.innerHeight * 1.5;
     const ABOUT_ENTRY_DIST    = window.innerHeight;
@@ -2393,8 +2393,8 @@
     aboutEl.style.transform = `translateY(-50%) translateY(${aboutTy.toFixed(1)}px)`;
     aboutEl.style.opacity   = aboutOpacity;
     // Contact text — same slide-then-hold behaviour as About text
-    const CONTACT_SLIDE_IN_START = 312;
-    const CONTACT_ENTRY = 330;
+    const CONTACT_SLIDE_IN_START = 296;
+    const CONTACT_ENTRY = 314;
     const CONTACT_SLIDE_DIST    = window.innerHeight;
 
     const contactVisible = orFrame >= CONTACT_SLIDE_IN_START;
