@@ -2140,6 +2140,8 @@
   }
   let scrollAccumulator = 0;
   let lastScrollY       = window.scrollY;
+  let bannerScrollTy    = 0;
+
 
   function advanceCarousel() {
     carouselTargetRotation += 72;
@@ -2236,7 +2238,10 @@
     prevOr = orFrame;
 
     // Layer 2 — banner: RAF loop draws the frames; scroll only controls opacity
-    bannerCanvas.style.opacity = Math.max(0, 0.5 - (orFrame / 5) * 0.5);
+    const bannerT  = Math.min(orFrame / 15, 1);
+    const bannerE  = bannerT * bannerT * (3 - 2 * bannerT); // smoothstep easing
+    bannerCanvas.style.opacity = (0.7 * (1 - bannerE)).toFixed(3);
+    bannerScrollTy = window.innerHeight * 0.12 - bannerE * window.innerHeight * 0.4;
 
     // Layer 3 — orange PNG with alpha
     orCtx.clearRect(0, 0, orCanvas.width, orCanvas.height);
@@ -2473,7 +2478,7 @@
     // Each layer moves a different amount — closer layers move more (depth)
     // Canvases have CSS translateX(-50%) for centering — must be preserved in JS override
     bgCanvas.style.transform     = `translate(calc(-50% + ${Math.round(x * 15)}px), 0)`;
-    bannerCanvas.style.transform = `translate(calc(-50% + ${Math.round(x * 25)}px), 0)`;
+    bannerCanvas.style.transform = `translate(calc(-50% + ${Math.round(x * 25)}px), ${Math.round(bannerScrollTy)}px)`;
     orCanvas.style.transform     = `translate(calc(-50% + ${Math.round(x * 35)}px), 0)`;
     // hero-text has CSS translateY(-50%) — must be preserved in JS override
     heroText.style.transform     = `translateY(calc(-50% + ${heroVertOffset.toFixed(1)}px)) translate(${Math.round(x * 45)}px, 0)`;
