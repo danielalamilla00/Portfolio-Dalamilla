@@ -136,7 +136,6 @@
     }
     #bg-canvas     { z-index: 1; image-rendering: optimizeQuality; will-change: transform; }
     #banner-canvas { z-index: 2; pointer-events: none; will-change: transform; }
-    #or-canvas     { display: none; }
     /* or-canvas lives in the ROOT stacking context so carousel layers can sandwich it */
     #or-canvas {
       position: fixed;
@@ -1280,13 +1279,14 @@
 <script>
   // ─── Verified frame counts ────────────────────────────────────────────────────
   //   Render Fondo Final/        Fondo000.webp               → Fondo280.webp       281 files
-  //   Render 5/                  Render 5000.webp            -> Render 5420.webp    421 files
+  //   Render 5/                  Render 5000.webp            -> Render 5317.webp    318 files
   //   Render Banner Alamilla/      Banner Alamilla000.webp     -> Banner Alamilla179.webp  180 files
-  const BG_TOTAL     = 281;
-  const OR_TOTAL     = 331;
-  const BG_OR_SYNC   = 273; // OR frame that coincides with BG's last frame (280)
+  const BG_TOTAL     = 331;
+  const OR_TOTAL     = 318;
+  const BG_OR_SYNC   = 258; // OR frame at which BG freezes (water transition begins)
   const BG_PHASE_END = BG_OR_SYNC / (OR_TOTAL - 1); // progress fraction at sync point
   const BANNER_TOTAL = 180;
+  const CRITICAL_OR     = 30;
   const CRITICAL_BG     = 15;
   const CRITICAL_BANNER = 15;
 
@@ -1323,6 +1323,8 @@
   const bgCtx        = bgCanvas.getContext('2d');
   const bannerCanvas = document.getElementById('banner-canvas');
   const bannerCtx    = bannerCanvas.getContext('2d');
+  const orCanvas     = document.getElementById('or-canvas');
+  const orCtx        = orCanvas.getContext('2d');
   const aboutEl      = document.getElementById('about-text');
   const contactEl    = document.getElementById('contact-text');
   const loader       = document.getElementById('loader');
@@ -1347,6 +1349,7 @@
 
   // ─── Image banks ─────────────────────────────────────────────────────────────
   const bgBank     = new Array(BG_TOTAL).fill(null);
+  const orBank     = new Array(OR_TOTAL).fill(null);
   const bannerBank = new Array(BANNER_TOTAL).fill(null);
 
   let animReady = false;
@@ -1362,6 +1365,9 @@
   // ─── Filename helpers ────────────────────────────────────────────────────────
   function bgPath(i) {
     return 'Render Fondo Final/Fondo' + String(i).padStart(3, '0') + '.webp';
+  }
+  function orPath(i) {
+    return 'Render 5/Render 5' + String(i).padStart(3, '0') + '.webp';
   }
   function bannerPath(i) {
     return 'Render Banner Alamilla/Banner Alamilla' + String(i).padStart(3, '0') + '.webp';
@@ -1380,10 +1386,13 @@
     const isMobile = window.innerWidth <= CANVAS_MOBILE_BREAKPOINT;
     const W = isMobile ? DESKTOP_CANVAS_WIDTH  : window.innerWidth;
     const H = window.innerHeight;
-    bgCanvas.width  = bannerCanvas.width  = W;
-    bgCanvas.height = bannerCanvas.height = H;
-    bgCanvas.style.width  = bannerCanvas.style.width  = W + 'px';
-    bgCanvas.style.height = bannerCanvas.style.height = H + 'px';
+    bgCanvas.width  = bannerCanvas.width  = orCanvas.width  = W;
+    bgCanvas.height = bannerCanvas.height = orCanvas.height = H;
+    bgCanvas.style.width  = bannerCanvas.style.width  = orCanvas.style.width  = W + 'px';
+    bgCanvas.style.height = bannerCanvas.style.height = orCanvas.style.height = H + 'px';
+    orCanvas.style.top       = '0';
+    orCanvas.style.left      = '50%';
+    orCanvas.style.transform = 'translateX(-50%)';
     orCanvas.style.top       = '0';
     orCanvas.style.left      = '50%';
     orCanvas.style.transform = 'translateX(-50%)';
@@ -2214,7 +2223,7 @@
 
     const orFrame = frameIndices(progress).orFrame;
 
-    // Layer 1 — background: reaches its last frame (280) when OR hits frame 272, then freezes
+    // Layer 1 — background: reaches its last frame when OR hits BG_OR_SYNC (258), then freezes
     const targetBgFrame = Math.min(Math.floor(progress / BG_PHASE_END * (BG_TOTAL - 1)), BG_TOTAL - 1);
     smoothBgFrame += (targetBgFrame - smoothBgFrame) * 0.3;
     bgFrame = Math.round(smoothBgFrame);
@@ -2225,6 +2234,12 @@
 
     // Layer 2 — banner: RAF loop draws the frames; scroll only controls opacity
     bannerCanvas.style.opacity = Math.max(0, 0.5 - (orFrame / 5) * 0.5);
+
+    // Layer 3 — orange PNG with alpha
+    orCtx.clearRect(0, 0, orCanvas.width, orCanvas.height);
+    if (orBank[orFrame]) {
+      drawFitWidth(orCtx, orBank[orFrame]);
+    }
 
     // Hero text — per-line blur+fade+translateY, staggered by 2 frames per line
     // Line i: entry starts at 31+i*2 (6 frames), exit starts at 82+i*2 (5 frames)
@@ -2330,10 +2345,10 @@
     prevMorphExiting = morphExiting;
 
     // About text — enters from fully below viewport (frames 263-268), sticky hold, then exits upward
-    const ABOUT_SLIDE_IN_START = 257;
-    const ABOUT_ENTRY   = 268;
+    const ABOUT_SLIDE_IN_START = 260;
+    const ABOUT_ENTRY   = 271;
     const ABOUT_EXIT    = 300;
-    const ABOUT_END     = 318;
+    const ABOUT_END     = 317;
     const ABOUT_SLIDE_OUT_DUR = ABOUT_END - ABOUT_EXIT;
     const ABOUT_EXIT_DIST     = window.innerHeight * 1.5;
     const ABOUT_ENTRY_DIST    = window.innerHeight;
@@ -2456,6 +2471,7 @@
     // Canvases have CSS translateX(-50%) for centering — must be preserved in JS override
     bgCanvas.style.transform     = `translate(calc(-50% + ${Math.round(x * 15)}px), 0)`;
     bannerCanvas.style.transform = `translate(calc(-50% + ${Math.round(x * 25)}px), 0)`;
+    orCanvas.style.transform     = `translate(calc(-50% + ${Math.round(x * 35)}px), 0)`;
     // hero-text has CSS translateY(-50%) — must be preserved in JS override
     heroText.style.transform     = `translateY(calc(-50% + ${heroVertOffset.toFixed(1)}px)) translate(${Math.round(x * 45)}px, 0)`;
   }
@@ -2487,9 +2503,10 @@
 
     // ── Phase 1: load critical frames ─────────────────────────────────────────
     const critBg     = Math.min(CRITICAL_BG, BG_TOTAL);
+    const critOr     = Math.min(CRITICAL_OR, OR_TOTAL);
     const critBanner = Math.min(CRITICAL_BANNER, BANNER_TOTAL);
 
-    const critTotal    = critBg + critBanner;
+    const critTotal    = critBg + critOr + critBanner;
     let   critDone     = 0;
     const loaderOrange = document.querySelector('.loader-orange');
     function onCritFrame() {
@@ -2499,13 +2516,14 @@
 
     await Promise.all([
       loadBatch(bgPath,     bgBank,     0, critBg,     onCritFrame, 'low'),
+      loadBatch(orPath,     orBank,     0, critOr,     onCritFrame, 'high'),
       loadBatch(bannerPath, bannerBank, 0, critBanner, onCritFrame, 'low'),
     ]);
 
     start(); // hide loader, begin animation
 
     // ── Phase 2: load remaining frames in background, show thin top bar ───────
-    const remTotal = (BG_TOTAL - critBg) + (BANNER_TOTAL - critBanner);
+    const remTotal = (BG_TOTAL - critBg) + (OR_TOTAL - critOr) + (BANNER_TOTAL - critBanner);
     if (remTotal > 0) {
       bgProgressBar.style.display = 'block';
       let remDone = 0;
@@ -2518,6 +2536,7 @@
 
       Promise.all([
         loadBatch(bgPath,     bgBank,     critBg,     BG_TOTAL,     onRemFrame, 'low'),
+        loadBatch(orPath,     orBank,     critOr,     OR_TOTAL,     onRemFrame, 'low'),
         loadBatch(bannerPath, bannerBank, critBanner, BANNER_TOTAL, onRemFrame, 'low'),
       ]);
     }
